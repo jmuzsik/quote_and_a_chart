@@ -1,0 +1,3050 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "REGION",
+                   "display": "WHO region"
+                 },
+                 {
+                   "label": "SEX",
+                   "display": "Sex"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "300"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "318"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "269"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "308"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "331"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "278"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "317"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "337"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "291"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "323"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "343"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "299"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "330"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "347"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "308"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "341"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "353"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "320"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "354"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "363"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "334"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "367"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "375"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "348"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "380"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "386"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "363"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "390"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "398"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "374"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "399"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "408"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "383"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "403"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "417"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "385"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "403"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "422"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "383"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "400"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "423"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "379"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "399"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "421"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "375"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "287"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "423"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "257"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "124"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "158"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "87"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "125"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "160"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "88"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "126"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "161"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "89"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "127"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "162"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "89"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "135"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "164"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "95"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "130"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "174"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "92"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "130"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "168"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "91"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "130"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "169"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "92"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "133"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "169"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "93"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "134"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "171"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "95"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "136"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "172"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "96"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "138"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "174"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "98"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "139"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "177"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "98"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "140"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "179"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "99"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "142"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "180"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "100"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "122"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "182"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "86"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "177"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "208"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "140"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "180"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "211"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "143"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "182"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "214"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "146"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "185"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "216"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "150"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "188"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "218"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "154"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "192"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "219"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "159"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "197"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "222"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "165"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "196"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "227"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "166"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "199"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "225"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "168"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "201"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "227"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "171"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "208"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "229"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "177"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "206"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "237"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "176"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "208"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "234"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "179"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "211"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "236"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "182"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "213"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "239"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "184"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "174"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "241"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "138"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "124"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "168"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "76"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "126"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "172"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "77"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "130"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "175"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "79"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "133"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "180"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "80"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "138"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "185"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "83"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "142"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "192"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "85"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "150"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "198"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "89"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "153"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "210"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "90"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "157"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "214"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "92"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "165"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "221"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "97"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "163"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "231"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "96"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "164"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "228"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "97"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "163"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "229"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "96"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "162"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "228"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "95"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "163"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "227"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "96"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "122"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "229"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "75"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "155"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "174"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "130"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "154"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "178"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "130"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "157"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "176"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "133"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "155"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "179"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "131"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "158"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "176"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "135"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "163"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "180"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "138"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "167"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "186"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "141"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "173"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "191"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "145"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "176"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "197"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "149"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "181"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "201"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "154"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "178"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "206"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "152"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "183"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "202"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "157"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "179"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "207"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "155"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "182"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "201"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "158"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "183"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "204"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "159"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "152"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "205"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "128"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "93"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "110"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "73"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "94"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "112"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "74"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "95"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "114"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "75"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "97"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "115"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "77"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "98"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "116"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "78"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "99"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "118"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "79"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "102"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "119"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "81"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "101"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "122"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "81"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "103"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "121"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "82"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "104"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "122"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "84"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "105"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "124"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "85"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "107"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "125"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "87"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "109"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "126"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "89"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "113"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "129"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "92"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "118"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "133"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "94"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "92"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "140"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "72"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "149"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "176"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2015",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "117"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "151"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "179"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2014",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "119"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "153"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "181"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2013",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "121"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "155"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "183"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2012",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "123"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "158"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "185"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2011",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "127"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "161"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "189"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2010",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "129"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "165"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "191"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2009",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "133"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "167"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "196"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2008",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "135"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "170"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "197"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2007",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "138"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "174"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "201"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2006",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "141"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "176"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "205"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2005",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "144"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "178"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "208"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2004",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "145"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "178"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "209"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2003",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "146"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "180"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "210"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2002",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "147"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "182"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "212"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2001",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "148"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Both sexes"
+                        },
+                "Value": "146"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Male"
+                        },
+                "Value": "215"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2000",
+                          "GHO": "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
+                          "SEX": "Female"
+                        },
+                "Value": "115"
+              }
+      ]
+}

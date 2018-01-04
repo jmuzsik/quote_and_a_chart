@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { withRouter, NavLink, Link } from 'react-router-dom';
-import { dataFunction, filterAll, filterBySex, turnStringsIntoFloats } from '../utils.js';
-import axios from 'axios';
+import { dataFunction, filterAll, filterBySex, turnStringsIntoFloats, mapTable, filterTable, initialReformat } from '../utils.js';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+const AlcoholConumptionDeaths = require('../data/alcohol-consumption-related-deaths.json');
 
 class AlcoholDeaths extends Component {
   constructor(props) {
@@ -10,22 +9,12 @@ class AlcoholDeaths extends Component {
     this.state = {
       data: []
     };
-    this.fetchData = this.fetchData.bind(this);
   }
 
   componentDidMount() {
-    this.fetchData();
-  }
-
-  fetchData(state, instance) {
-    axios
-      .get(this.props.url)
-      .then(res => {
-        this.setState({
-          data: res.data
-        });
-      })
-      .catch(err => console.error(err));
+    let data = []
+    data = mapTable(filterTable(initialReformat(AlcoholConumptionDeaths)))
+    this.setState({ data })
   }
 
   render() {

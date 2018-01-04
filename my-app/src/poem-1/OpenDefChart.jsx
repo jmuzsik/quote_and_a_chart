@@ -9,10 +9,8 @@ import {
   ResponsiveContainer
 } from 'recharts';
 import React, { Component } from 'react';
-import axios from 'axios';
-import { dataFunction, filterAll } from '../utils.js';
-
-// [{year: 'Page A', nameOfCountry: 2400, nameOfCountry: 2400}]
+import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
+const OpenDefData = require('../data/open-defecation.json');
 
 class OpenDefChart extends Component {
   constructor(props) {
@@ -20,22 +18,12 @@ class OpenDefChart extends Component {
     this.state = {
       data: []
     };
-    this.fetchData = this.fetchData.bind(this);
   }
 
   componentDidMount() {
-    this.fetchData();
-  }
-
-  fetchData(state, instance) {
-    axios
-      .get(this.props.url)
-      .then(res => {
-        this.setState({
-          data: res.data
-        });
-      })
-      .catch(err => console.error(err));
+    let data = []
+    data = mapTable(filterTable(initialReformat(OpenDefData)))
+    this.setState({ data })
   }
 
   render() {

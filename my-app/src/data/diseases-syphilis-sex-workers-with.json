@@ -1,0 +1,1888 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "REGION",
+                   "display": "WHO region"
+                 },
+                 {
+                   "label": "COUNTRY",
+                   "display": "Country"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "COUNTRY": "Afghanistan",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/06/2012 to 30/09/2012.  Data source: Integrated Behavioral Biological Surveillance (IBBS), 2012.  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive)(Serological test (Rapid test kit) was used).  Comments: the data collected from three sites (Kabul, Mazar-i-Sharif and Hirat). The data is collected from three sites (three cities). ",
+                "Value": "1.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Afghanistan",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "8.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Algeria",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/06/2013 to 31/12/2013.  Data source: Project report: \"Improving access to prevention, treatment and support for HIV among Sex Workers in Oran,\" December 2013. NGOs: AIDS Algeria. (Original: Rapport du projet: \"Renforcer l�acc�s � la pr�vention, traitement et appui li�s au VIH aupr�s des Travailleurs du sexe � Oran\", D�cembre 2013 . ONG: AIDS Alg�rie.  ) Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: Outreach program at Oran (western Algeria). (Origina: Programme de proximit� au niveau de la wilaya d'Oran (Ouest Alg�rien). )",
+                "Value": "7.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Algeria",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "18.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Angola",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to 2010 Feb 15 to 2011 May 16. These data are from the behavioral surveillance and serology study of HIV and syphilis in young women from 15-24 years involved in transactional sex on the border between Angola and Namibia (Cunene Province), conducted by INLS/CDC in 2010.  This study is not representative of all female sex workers because it was done in a border area in one province.",
+                "Value": "3.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Argentina",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Pando MA, et al. Incidence of HIV-1 infection, antiretroviral drug resistance and molecular characterization in newly diagnosed individuals in Argentina. A Global Fund Project. AIDS Research and Human Retroviruses, 2011;27(1):17-23. ISSN: 0889-2229",
+                "Value": "22.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Armenia",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Integrated Biological and Behavioral Survaillance Survey. Comments: Respondent-driven sampling (RDS) was used to conduct surveillance among SWs. Data are representative.",
+                "Value": "0.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Armenia",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Integrated BioBehavioral Surveillance (IBBS) Survey.",
+                "Value": "4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Armenia",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to September 1 to October 31 of reference year.",
+                "Value": "3.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bahamas",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: SMALL SELECT SUBSET ATTENDING COMPREHENSIVE STI CLINIC. ",
+                "Value": "0.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bahamas",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "0.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "3.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "3.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to 2010 December 1 to 2011 June 30. Govt. of Bangladesh, 2011. National HIV Serological Surveillance, 9th Round Technical Report, 2011 Bangladesh. National AIDS/STD Program, Directorate General of Health Services, Ministry of Health and Family Welfare, Govt. of Bangladesh.",
+                "Value": "3.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Presented data is from HSS Round 8 which has not yet been officially published but has been widely used and accepted by national stakeholders.",
+                "Value": "4.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "YEAR": "2007",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "HSS-8 (2007) data is unpublished data. Brothel based sex female workers was not included in 8th round HSS.",
+                "Value": "4.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belarus",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/08/2013 to 30/11/2013.  Data source: The results of behavioral and biomedical research among IDUs, MSM, FSW in the Republic of Belarus for 2013. (Original: ?????????? ?????????????? ? ??????????????? ???????????? ????? ???, ???, ??? ? ?????????? ???????? ?? 2013 ???. ) Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  ",
+                "Value": "1.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belarus",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "0.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belgium",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/01/2013 to 01/01/2013.  Data source: Date of routine programme from 2 psycho-socio-medical organizations dedicated to sex workers: Ghapro: organization covering provinces of Antwere and part of Flemish Brabant, Flanders. They had contacts with 1345 SW in 2013 (121 male; 1224 female; 320 <25 years; 1025 >=25 years) Espace. P: organization covering Wallonia and Brussels. They had contacts with 865 SW (12 male; 853 female; <25 years: 212; >=25 years: 618).  Data are not representative.  Data are not consistent with the definition of active syphilis for GARPR.  Comments: Data provided are merged from the 2 sources: Ghapro (Flanders) and Espace.P (Wallonia & Brussels). The disaggregated data are: Ghapro: 6 syphillis on 1136 SW = 0.5% Espace. P : 6 syphillis on 710 SW = 0.8%. Data from routine programme but not from a survey with a representative sampling. ",
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belgium",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data from Flemish community (routine data from Ghapro in 2011, a medico-social centre for SW in Antwerp), not representative of all SW.",
+                "Value": "1.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belgium",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "0.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belize",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: BSS.",
+                "Value": "0.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bolivia (Plurinational State of)",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Data from routine monitoring by the Departmental Monitoring and Reference Centers of STI / AIDS (Original: Corresponde a las vigilancia regular de los CDVIR/CRVIR). Comments: Data are representative.",
+                "Value": "3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bolivia (Plurinational State of)",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: The data correspond to sex workers attending prevention programs, ie attending Monitoring, Information and Referral Centers (CDVIR). (Original: Los datos corresponden a trabajadoras sexuales usuarias de los programas de prevenci�n, es decir que acuden a los Centros de Vigilancia Informaci�n y Referencia (CDVIR). )",
+                "Value": "3.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bolivia (Plurinational State of)",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "The data come from existing records in the departmental centers (Regional) Information, Monitoring and Reference CDVIR / CRVIR. Coverage is limited only to sex workers attending the program, no information of clandestine workers.",
+                "Value": "5.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bolivia (Plurinational State of)",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 2010 September 06 to 2010 October 12. Data source: Study of Second Generation Surveilance. Coverage is estimated on sex workers working locally or in the street but does not capture those working by telephone, online or independently (a group that is increasing in number). The data correspond to three cities with high population density and are considered nationally representative.",
+                "Value": "8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bosnia and Herzegovina",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to 2010 November 1 to 2011 February 28. The research was conducted as a study of a cross-section of the population of female sex workers (SW) and men who have sex with men (MSM) in major cities in BiH: Sarajevo, Tuzla, Banja Luka, Bijeljina, Prijedor. All the places were selected on the basis of estimated presence of high-risk groups, availability of outreach workers, involvement of NGOs and availability of reliable information. Both samples were selected applying the “Snowball” sampling method.",
+                "Value": "4.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bosnia and Herzegovina",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "7.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Botswana",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/07/2012 to 31/10/2012.  Data source: Mapping, Size Estimation, and Biological and Behavorial Surveillance Study of HIV and Sexually Transmitted Infections Among Selected High Risk Sub-Populations in Botswana (2012).  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: This data represents female sex workers only.",
+                "Value": "3.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brazil",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "2.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brazil",
+                          "YEAR": "2009",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/01/2009 to 31/12/2009.  Data source: RDS among female sex workers in ten municipalities in Brazil (age 18+).  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  ",
+                "Value": "2.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bulgaria",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/09/2012 to 30/11/2012.  Data are not representative.  Data are not consistent with the definition of active syphilis for GARPR.  Comments: Integrated biological and behavioral surveillance (IBBS) among sex workers in Bulgaria has been conducted yearly since 2004. Surveillance is based on repeated cross-sectional surveys of eligible population, recruitment primarily carried out from selected venues. Information on demographics, substance use, injecting and sexual behaviours, were collected through an FHI-structured and adapted questionnaire during face-to-face interviews. A blood sample was collected for testing for HIV/ HCV/ HCB and syphilis.  It is important to note that ELISA Syphilis tests were performed and reported data on the number of sex workers who tested positive account for reactive test results rather than active syphilis. ",
+                "Value": "15.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bulgaria",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to Oct 1 to Nov 30 of reference year. Integrated biological and behavioral surveillance (IBBS) among sex workers in Bulgaria has been conducted yearly since 2004. Surveillance is based on repeated cross-sectional surveys of eligible population, recruitment primarily carried out from selected venues. It is important to note that ELISA Syphilis tests were performed and reported data on the number of sex workers who tested positive account for reactive test results rather than active syphilis.",
+                "Value": "9.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burkina Faso",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 07/01/2013 to 30/06/2014.         Source: Behavioral and serosurveillance study of HIV and syphilis among men who have sex with men (MSM) and sex workers (SW), Burkina Faso (Original: Etude comportementale et de serosurveillance du VIH et de la syphilis aupr�s des hommes ayant des rapports sexuels avec des hommes (HSH) et les travailleuses de sexe (TS), au Burkina Faso).                     Comments: The survey of SW took place from January to August 2013 and two cities from March to June 2014 three other cities. Totaling five (05) cities covered by the survey. (Original: L'�tude aupr�s des TS s'est d�roul� de janvier � ao�t 2013 dans deux villes puis de mars � juin 2014 dans trois autres villes. Soit au total cinq (05) villes couvertes par l'enqu�te.)",
+                "Value": "1.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burundi",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "28.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Côte d'Ivoire",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 18/03/2014 to 28/06/2015. Source: Special studies - Bio Behavioral Survey.              Comments: The investigation was carried out only in the Abidjan District (Original: l'Enqu�te s'est deroulement uniquement dans le District d'Abidjan). Data are not representative. Data are not consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).",
+                "Value": "0.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cabo Verde",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source:  Report from the NGO 'Verdefam', which works in health centres and mobile outposts for the screening of STIs in sex workers (Original: Rapport de l'ONG Verdefam qui travaille dans les centres de sant� et dans les postes mobiles pour le depistage des IST au sein des  travailleurs de sexe).        Comments: The data are only representative of the intervention sites (Original: Les donn�s represent seulement les sites d'intervention ( Praia , Santa Catarina, Tarrafal, Santa Cruz, et  Mindelo))",
+                "Value": "0.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cabo Verde",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Progress reports from mobile STI clinics.",
+                "Value": "1.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cabo Verde",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "8.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cambodia",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Link Response monitoring report 2014",
+                "Value": "0.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cambodia",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: NCHADS and RHAC. Entertainment Workers (EWs) visiting the STI clinic for the first time were tested for syphilis. Test type: RPR used in screening and  TPPA/TPHA confirmed.The denominator is the number of EWs who visited the STI clinic at first time only who were tested for syphilis with RPR test(first test), and the numerator is the number of EWs who have a positive syphilis serology with TPPA/TPHA test (confirmed test). All positive cases were treated. ",
+                "Value": "0.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cambodia",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "The syphilis screening test performed only for Entertainment Workers (EWs) who visited the STI clinic for the first time. We processed  the RPR test as the first test for screening syphilis and used TPPA/TPHA as the confirmed test. The denominator is the number of EWs who visited the STI clinic at first time only who were tested for syphilis with RPR test (first test), and the numerator is the number of EWs who have a positive syphilis serology with TPPA/TPHA test (confirmatory test).",
+                "Value": "2.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cambodia",
+                          "YEAR": "2005",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "STI sentinel surveillance: Female commercial sex workers.",
+                "Value": "2.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cameroon",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/01/2010 to 31/03/2010.  Data source: Epidemiological and behavioral survey of HIV and syphilis among sex workers in Cameroon. (Original: Enqu�te �pid�miologique et comportementale du VIH et de la syphilis chez les travailleurs de sexe au Cameroun.  ) Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  ",
+                "Value": "17.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Central African Republic",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Special studies. Comments: Small sample. Data are not representative.",
+                "Value": "5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "11.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "7.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Monthly Statistical Records (REM) of the Public Health System. The numerator refers to screening tests (RPR and VDRL) that were reactive for syphilis for sex workers attending sexual health centers of the Public Health System. The denominator indicates the total number of screening tests for syphilis (RPR and VDRL) processed in sex workers attending sexual health centers Public Health System.",
+                "Value": "10.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "6.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "0.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source:  National HIV sentinel surveillance, 2014. Data are representative.",
+                "Value": "2.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "2.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 2012 April 01 to 2012 June 30. Data source: 2012 National HIV sentinel surveillance.",
+                "Value": "2.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "2.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "2.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "2.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Colombia",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Based upon a random sample of establishments where sex workers worked in Medellín, Barranquilla, Bucaramanga, and Cali.",
+                "Value": "18.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Comoros",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: National programme data (Routine data). Data are not representative.",
+                "Value": "0.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Comoros",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "These Sex Workers were followed through the sentinel surveillance system.",
+                "Value": "0.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Comoros",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "7.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Costa Rica",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/01/2013 to 15/10/2013.  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: This information corresponds to a single sentinel site for VICITS, located in the greater metropolitan area of the country. The information corresponds to sex workers. (Original: Esta informaci�n corresponde a un solo sitio centinela VICITS, ubicado en el Gran Area Metropolitana del pa�s, la informaci�n corresponde a Trabajadoras del sexo. )",
+                "Value": "4.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Costa Rica",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "12.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Czechia",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Cross-sectional study and prevalence assessment among sex workers of STI and HIV was conducted by NGO Bliss without Risk.",
+                "Value": "2.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Djibouti",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/03/2014 to 31/03/2014. Source: Integrated bio-behavioral survey on HIV-AIDS among female sex and long-distance truck drivers. Djibouti, 2014. (Original: Enqu�te int�gr�e bio-comportementale sur le VIH-SIDA chez les professionnelles de sexe et les conducteurs de camion sur longue distance. Djibouti, 2014)     Comments: The study was conducted in four urban sites: Q2, Q4, and Arhiba PK12. (L'�tude a �t� men�e sur 4 sites urbains:  Q2, Q4, ARHIBA et PK12.) Data are not representative. ",
+                "Value": "5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominican Republic",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/07/2012 to 31/08/2012.  Data source: Behavior Surveillance Survey with serological data, 2012 (Original: Encuesta de Vigilancia de Comportamiento con vinculacion serologica, 2012. ) Data are not representative.  Data are not consistent with the definition of active syphilis for GARPR.  Comments:  The survey was conducted in 5 provinces. (Original: La encuesta se realizo en 5 provincias.)",
+                "Value": "9.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominican Republic",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "9.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominican Republic",
+                          "YEAR": "2007",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to February 28 to August 31 of reference year. Source: 1st Behavior Surveillance Survey by Serological Linking Vulnerable Populations: GTH, TRSX, UD, 2008.",
+                "Value": "7.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "El Salvador",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Sentinel surveillance. Data are representative.",
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "El Salvador",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/07/2012 to 31/12/2012.  Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  ",
+                "Value": "1.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "El Salvador",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "The data for sex workers is for the City of San Salvador which is the capital of El Salvador, and is taken from the Central Monitoring Survey Sexual Behavior and HIV Prevalence / STIs in Vulnerable Populations (ECVC) 2010.",
+                "Value": "17.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "El Salvador",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Taken from the Central Survey of Sexual Behavior Surveillance and Prevalence of HIV / STIs in Vulnerable Populations, 2008; inlcudes only female sex workers, data for the Department of San Salvador.",
+                "Value": "2.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Eritrea",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "1.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Estonia",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Study on FEMALE CSWs in Tallinn (capital city) in summer 2011. The study was part of the international BORDERNETWork Project coordinated by the SPI Forschung GmbH in Germany. Sampling method: Respondent Driven Sampling. Rapid testing for syphilis. Sample size was 210, and out of these, two (0.9%) were tested positive for syphilis.",
+                "Value": "0.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Fiji",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 07/06/2012 to 25/08/2012.  Data source: IBBS Survey for SW.  Data are not representative.  Data are not consistent with the definition of active syphilis for GARPR.  ",
+                "Value": "28.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gabon",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "KAP and seroprevalence study in the PS in Libreville and Owendo.",
+                "Value": "2.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gabon",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "6.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Georgia",
+                          "YEAR": "2006",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "BSS study , conducted by: Save The Children, Tanadgoma, Bemoni, National AIDS Center (IDACIRC) , 2006.",
+                "Value": "23.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Germany",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/01/2010 to 30/04/2011.  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: The data provided stem from the cross-sectional study KABP-Surv STI, performed between January 2010 and April 2011 in 24 local public health departments across Germany. The study population consists of female and transgender sex workers, recruited while attending a low-threshold HIV/STI consultation. A diagnosis-questionnaire, filled out by the physician, was available for 1225 participants. ",
+                "Value": "0.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ghana",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "6.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ghana",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 2011 August 01 to 2011 October 31. Data source: Integrated BioBehavioral Surveillance (IBBS) Survey.",
+                "Value": "6.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Special studies and Sentinel Surveillance of key populations (Original: Estudios especiales y Vigilancia Centinela).             Comments: The primary source for this indicator is clinical data from 11 specialized clinics across the country. It is not possible to calculate a single percentage from data from the ECVC.    Sex workers (MTS). EVC data collected from 6% in active syphilis in Escuintla; Sex workers (MTS). ECVC 0.8 data collected from active syphilis in Guatemala City; Sex workers (MTS). ECVC data collected from 0% in active syphilis in Malacat�n. (Original: Profesionales del sexo ( MTS). Datos recolectado de ECVC  6% en sifilis activa en Escuintla; Profesionales del sexo ( MTS). datos recolectado de ECVC 0.8 sifilis activa en Ciudad de Guatemala; Profesionales del sexo ( MTS). datos recolectado de ECVC 0% en sifilis activa en Malacatan)        Data are representative.",
+                "Value": "0.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: Information obtained from 5 VICITS sites: Xela Health Center, Health Center of Zone 3, Puerto Barrios Health Center, Coatepeque Hospital, Marco Antonio Foundation. (Original: Informaci�n obtenida de 5 sitios VICITS, Centro de Salud de Xela, Centro de Salud de la Zona 3, Cetro de Salud de Puerto Barrios, Hospital de Coatepeque, Fundaci�n Marco Antonio. )",
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Sentinel Surveillance of sexually transmitted infections (VICITS). Including 4 sentinel sites including Health Care No.2 ITS, Marco Antonio Foundation in Guatemala City Health Center of Puerto Barrios Izabal and Quetzaltenango Health Center.",
+                "Value": "0.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "1.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "4.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "6.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guinea-Bissau",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data obtained from the study of STIs among FSWs.",
+                "Value": "19.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guyana",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/11/2013 to 31/10/2014.   Source: Bio-behavioural Surveillance survey.     Comments: A total of 530 sex workers were interviewed (male, female and transwomen). The survey methodology was different from the 2009 study. In 2014, the PLACE methodology was utilized- the same was much larger as well as the scope of the study which gathered data from 9 out of 10 administrative regions in the country. persons did not have to self-identify to be recruited into the survey as was the case in the 2009 survey. The study was not population based. It was carried out in 9 out of 10 administartive regions in the country. A Rapid Plasma Reagin Test was used. Data are not representative.",
+                "Value": "1.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guyana",
+                          "YEAR": "2005",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/01/2004 to 31/12/2005.  Data source: BBSS 2004/2005.  Data are not representative.  Data are not consistent with the definition of active syphilis for GARPR testing was done using the rapid plasma reagin (RPR) test and all samples with a titre of 1.8 and above were considered as having active syphilis).  Comments: Data was collected in the BBSS 2008/9 and 8.5% of sex workers self reported having sores or boils on their vagina or anus in the 12 months preceding the survey (n=199). Data was collected from 6 out of 10 regions. Data collected from 3 out of 10 administrative regions: Regions 4, 6 and 10. ",
+                "Value": "15.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Sentinel Surveillance. Comments: These data are collected from the VICITS strategy. The data do not represent the whole country. Currently it has been implemented in five regions: Atlantida, Cortes, Tegucigalpa Metropolitan, Metropolitan Region of San Pedro Sula and Choluteca. This is a strategy that is being implemented progressively. (Original: Esto corresponde a la estrategia VICITS. Los datos no representan a todo el pa�s. Actualmente se ha implementado en 5 regiones: Atl�ntida, Cort�s, Metropolitana de Tegucigalpa, Regi�n Metropolitana de San Pedro Sula y Choluteca. Esta es una estrategia que se esta implementando progresivamente.)    Data are not representative. ",
+                "Value": "2.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: This corresponds to the VICITS strategy. The data do not represent the whole country. It has now been implemented in five regions: Atlantis, Cortez, Tegucigalpa Metropolitan, metropolitan area of ??San Pedro Sula and Choluteca. There is a plan to extend this coverage to more regions in the country. (Original: Esto corresponde a la estrategia VICITS. Los datos no representan a todo el pa�s. Actualmente se ha implementado en 5 regiones: Atl�ntida, Cort�z, Metropolitana de Tegucigalpa, Regi�n Metropolitana de San Pedro Sula y Choluteca. Existe la visi�n de ampliar esta cobertura a mas regiones en el pa�s.)",
+                "Value": "2.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Data Strategy Sentinel Surveillance of Sexually Transmitted Infections (VICITS) in sex workers and UMIETS, Ministry of Health. ",
+                "Value": "2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "1.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "6.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "India",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: National programme data. Comments: Data are not representative.",
+                "Value": "0.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "India",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Programme Data from Designated STI Clinics through NACO Computerized Management Information System. The data reported is through designated STI clinics located within health facilities at district level and above only. It does not include ANC visits at sub-district health facilities (Primary Health Centres, Community Health Centres, Block PHCs etc.).",
+                "Value": "0.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "India",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "3.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Monthly STI report, MOH. Comments: Data are representative.",
+                "Value": "4.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: Data measurement source is monthly STI report, MoH. ",
+                "Value": "6.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Monthly STI Report, Sub Directorate AIDS & STD, MoH",
+                "Value": "7.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Monthly report of STI services, AIDS & STD Sub Directorate - MoH 2011.",
+                "Value": "8.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Syphilis prevalence among direct FSW was 7%, indirect FSW was 3%, waria was 13%.",
+                "Value": "6.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "15.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iran (Islamic Republic of)",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/09/2010 to 01/03/2011.  Data source: RDS among FSW in Shiraz district using both behavioral questionnaire and blood samples for HIV and syphilis, and vaginal swab for other STIs.  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: Although the design of the survey is for only Shiraz, other older studies among female high risk population did not reveal higher syphilis prevalence. ",
+                "Value": "0.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iran (Islamic Republic of)",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "1.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jamaica",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "1.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jamaica",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "6.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jordan",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "6.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kazakhstan",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "17.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kenya",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to 2010 Nov 1 to 2011 Jan 31. Data is from Integrated biological survey conducted in Nairobi.",
+                "Value": "0.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kenya",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Nairobi area IBBSS.",
+                "Value": "0.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kiribati",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: National laboratory Services.  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: HIV and STI tests were conducted on 30 sex workers from Betio area as part of KFHA campaign targeting this high risk group, and none were positive. ",
+                "Value": "0.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kyrgyzstan",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to August 1 to September 30 of reference year.",
+                "Value": "10.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kyrgyzstan",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "32.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lao People's Democratic Republic",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 2011 December 14 to 2011 December 29. Data source: Integrated BioBehaviour Surveillance (IBBS) Survey.",
+                "Value": "0.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lao People's Democratic Republic",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Results of 3rd round sentinel surveillance.",
+                "Value": "0.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lesotho",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/12/2013 to 31/08/2014. Source: IBBS. Comments: Data collected only on two main sites. Data are not representative.",
+                "Value": "27.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Liberia",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: IBBSS.  Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  ",
+                "Value": "4.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lithuania",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "5.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Madagascar",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: 10 sites were included in the study, with the RDS method. (Original: 10 sites ont �t� concern�s par l'�tude, avec la m�thode RDS. )",
+                "Value": "16.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Madagascar",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "15.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Madagascar",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "12.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malawi",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: 2013 Malawi Biological and Behaviouraural Surveillance Study (Preliminary Results). Comments: Data as collected refers to SWs with a positive rapid syphillis test but not disaggregated into asymptomatic and active syphillis. Data are representative.",
+                "Value": "20"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malaysia",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Survey. Data is from selected clinics.",
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malaysia",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data from survey at selected health facilities (government & private) and NGO sites.",
+                "Value": "0.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Maldives",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "0.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mali",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "0.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritania",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Behavioral and Biological Surveillance Surveys (Original: ENQUETE SEROCOMPORTEMENTALE COMBINEE 2014). Data are not representative.",
+                "Value": "2.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritius",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to August 2 to 17 of reference year. Data from IBBS - FSW (only).",
+                "Value": "4.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mexico",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "1.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mexico",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "2.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mexico",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Health Information System (SIS) and DGIS. The numerator is the number of male and female sex workers who tested ??positive for syphilis. The denominator is the total number of male and female sex workers who were tested for syphilis. The Mexican Ministry of Health serves about 55% of the population. Test Type: RPR/VDRL and rapid tests.",
+                "Value": "3.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mexico",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: SS / DGIS. Health Information System. Data reported by the SAES and CAPASITS at December 31, 2010 and 2011. It includes information from Ministry of Health, for their specialized services for people with HIV / AIDS and STIs. The numerator includes total detection of syphilis conducted in sex workers and the denominator includes positive detections of syphilis in this population. Aggregate information is used for two years (2010-2011).",
+                "Value": "2.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 17/03/2014 to 09/05/2014. Source: HIV/STI Surveillance Survey Report, 2014. Data are representative.",
+                "Value": "29.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 02/01/2012 to 29/03/2012.  Data source: HIV, STI Second Generation Sentinel Surveillance Survey.  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive); person was considered syphilis positive if both RPR and TPHA tests are reactive with RPR titer of 1:2 above.  Comments: Data were collected from Ulaanbaatar city and 4 provinces. ",
+                "Value": "27.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "YEAR": "2009",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "SGS 2009. In 2009 the sampling of sex workers was done from 5 sites. In previous years' report, data from 2 sites were reported. ",
+                "Value": "18.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "20.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Morocco",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 2011 December 01 to 2012 May 30. Data source: Integrated BioBehavioral Surveillance (IBBS) Survey using Respondent Driven sampling RDS). ",
+                "Value": "17.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Morocco",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Integrated bio-behavioral survey (IBBS) using RDS (Respondent Driven sampling) in 4 cities: Agadir, Rabat, Fès, Tanger.  ",
+                "Value": "17.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Morocco",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "16.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: National programme data. Comments: Data from partners are not available. Data are not representative.",
+                "Value": "8.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: Data from partners are not available. ",
+                "Value": "11.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 2012 March 01 to 2012 May 31.Data source: HIV sero-sentinel surveillance, 2012.",
+                "Value": "3.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to March 1 to May 31 of reference year. Data from annul HIV Sero-sentinel surveillance survey 2011, where syphilis testing is included.",
+                "Value": "3.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "5.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nepal",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 16/01/2011 to 06/03/2011.  Data source: Integrated Biological and behavior Surveillance Surveys.  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: We have two separate studies for male sex workers and female sex workers. Since only one field is available for data entry, we have entered data for female sex workers as 0.67% (Source: IBBS among FSWs in Kathmandu valley, 2011) for now. However, percentage of MSW with active syphilis is 2.2% (Source: IBBS among MSM/TG in Kathmandu valley, 2012). IBBS Surveys in Nepal are conducted in regular intervals in different survey areas. ",
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nepal",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Capital city IBBS data. Only FSW included. ",
+                "Value": "1.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nepal",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "1.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Netherlands",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data from female sex workers attending STI clinics in the Netherlands in 2010.",
+                "Value": "0.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Netherlands",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "0.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nicaragua",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period:  01/12/2013 to 31/03/2014.               Source: Surveillance study of sexual behavior and HIV and syphilis prevalence in vulnerable populations at increased risk to HIV: men who have sex with men, transgender women, sex workers, injecting drug users and people with HIV in Nicaragua, 2013. Study sampled from 5 cities. (Original: Estudio de vigilancia de comportamiento sexual y prevalencias de VIH y S�filis en poblaciones vulnerables y en mayor riesgo al VIH: Hombres que tienen sexo con hombres, Transg�nero femeninas, Trabajadoras sexuales, Usuarios de drogas inyectables y Personas con VIH en Nicaragua, 2013. Estudio cuyo dise�o muestral es no probabil�stico (bola de nieve), de 5 ciudades del pa�s.)          Data are not representative.",
+                "Value": "2.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nicaragua",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/01/2009 to 31/12/2010.  Data source: Behavior Surveillance Survey of prevalence of HIV and STIs. Weighting based on special tabulation provided by the UVG (Chinandega 0 of 213/23 617 Managua). (Original: Fuente Encuesta de Vigilancia del Comportamiento y prevalencia de VIH e ITS. Ponderaci�n en base a tabulaci�n especial brindada por la UVG (Chinandega 0 de 213 / Managua 23 de 617). ) Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  ",
+                "Value": "2.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nicaragua",
+                          "YEAR": "2009",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Behavior Surveillance Survey and prevalence of HIV and STIs. Weighting based on special tabulation provided by the UVG.",
+                "Value": "2.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Niger",
+                          "YEAR": "2009",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 15/04/2009 to 15/07/2009.  Data source: Report on sentinel surveillance STI / HIV in pregnant women and sex workers in Niger in 2009.  The 2012 sentinel surveillance did not take into account the sex workers. (Original: Rapport de la surveillance sentinelle IST/VIH chez les femmes enceintes et les professionnelles de sexe (PS) au Niger en 2009. La surveillance sentinelle 2012 n'as pas pris en compte les PS.  ) Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  ",
+                "Value": "4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nigeria",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "1.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Panama",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Data for 2013 are from the registration of the six 'Friendly Clinics' which carry out the Sentinel Surveillance of STIs in PEMAR population, located in the following Metropolitan Health Regions (santa Ana), Colon, Chiriqui, San Miguelito and Bocas Del Toro (Original: Fuentes de la Notificaci�n: Los datos para el a�o 2013 provienen de los registro de las seis Cl�nicas Amigables (CLAM) donde se llevan a cabo las Vigilancia Centinela de las ITS (VICITS) en poblaci�n PEMAR, ubicadas en las siguientes Regiones de Salud Metropolitana (Santa Ana), Col�n , Chiriqu�, San Miguelito y Bocas Del Toro).   Data are representative. Data are not consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).",
+                "Value": "53"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Panama",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Sentinel Surveillance data. A total of 92 sex workers (82 female 89.1% and 10 transexual (10.9%).",
+                "Value": "6.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Papua New Guinea",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "3 transgender were not included in the numerator.  12 transgender were not included in the denominator.  ",
+                "Value": "21.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "8.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "2.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Data source: PRONASIDA (voluntary counseling and testing) and CTV data (Mobile clinic data). Six health regions are represented. CTV PRONASIDA (voluntary counseling and testing) and CTV data (Mobile clinic data). ",
+                "Value": "7.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "We achieved access to sex workers for syphilis testing through the promotion of VCT services through the work of peer promoters and from mid-2011, routes were established with the mobile VCT.",
+                "Value": "16.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Includes male and female sex workers. Active syphilis infection is defined as a patient with a reactive rapid test plus a reactive VDRL at 1:1 or higher in a patient with a previous non-reactive test or without a previous test.",
+                "Value": "14.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Peru",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "6.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Philippines",
+                          "YEAR": "2009",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "IHBSS, 2009.",
+                "Value": "1.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Moldova",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 15/02/2013 to 05/06/2013.  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: Respondent Driven Sampling was applied. The sampling was conducted independently in two established study areas (municipality of Chisinau and municipality of Balti). In each location 5 persons  (\"seeds�) were selected to represent different strata of sex workers. In each site, recruitment occurred up to the 9th wave. The planned sample size has been estimated by on-line sample size calculator using the estimated number of commercial sex workers in each site of study implementation.  Collected data are representative only for study area. Entered data are for Chisinau, capital city. ",
+                "Value": "10.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Moldova",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "RDS has been applied in the 2009 - 2010 BSS.",
+                "Value": "8.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Moldova",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "The target group of the research are exclusively  beneficiaries of the Harm Reduction Programmes and cannot be extrapolated to represent the entire population of FSWs.",
+                "Value": "13.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sao Tome and Principe",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 2012 August 01 to 2012 December 31. Data source: Sentinel Site.",
+                "Value": "4.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sao Tome and Principe",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "5.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Senegal",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: National Programme data. Comments: The data are not complete for the regions of Tambacounda, Kolda, Kaolack and Fatick (Original:  Les donn�es ne sont pas exhaustives dans les r�gions de Tamba, Kolda, Kaolack et Fatick)",
+                "Value": "19.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Senegal",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: These are sex workers followed in STI clinics, in whom syphilis is suspected, at the level of the entire country. (Original: Il s'agit des professionnelles du sexe suivies dans les centres IST chez qui une syphilis est suspect�es au niveau de tout le pays. )",
+                "Value": "6.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Senegal",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 2010 June 07 to 2010 August 20. Data source: ENSC Report, 2010.",
+                "Value": "3.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Senegal",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "This is considered representative as the combined monitoring survey was conducted at the population level and not within the cohort of female sex workers followed.",
+                "Value": "11.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Seychelles",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  ",
+                "Value": "6.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: National programme data. Comments: There were no cases of active / infectious syphilis in female sex workers. There were only 19 cases of non infectious / latent syphilis. Data are representative.",
+                "Value": "0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  ",
+                "Value": "0.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Approximate total number of tests done during Jan - Dec 2010 (Source : Table 10 - DSC Annual Report 2010).",
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "0.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Solomon Islands",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "10.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Somalia",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to August 15 to October 31 of reference year. IBBS conducted among female sex workers in 2008. There is no specific program targeting sex workers testing and treatment in the country.",
+                "Value": "3.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sri Lanka",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: IBBS survery 2014. Comments: The surveys considered selective areas. Data are not representative.",
+                "Value": "0.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sri Lanka",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to August 15 to Nov 15 of reference year. No data available regarding VDRL titre. Numerator includes VDRL status reported as reactive.",
+                "Value": "2.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sri Lanka",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "3.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sudan",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/10/2010 to 01/08/2011.  Data source: Integrated bio behavioral surveillance survey (IBBS) using RDS.  Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: Value for this indicator is the unadjusted sample proportion for female sex workers only disaggregation by site is shown in the attached IBBS report under the sex workers indicator. ",
+                "Value": "4.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tajikistan",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Sentinel surveillance among sex workers with analysis using IFA1 (screening) and IFA2 (expert). ",
+                "Value": "9.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tajikistan",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "12.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Thailand",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/05/2013 to 30/06/2013.  Data are representative.  Data are not consistent with the definition of active syphilis for GARPR.  Comments: Thai National data regarding active syphilis among sex workers are actually available from two health information systems including HSS (HIV sentinel surveillance system) and routine STIs montoring system (STI mini record). In this report, data from HSS were chosen due to its presumably better reliability. For more complete documentation, it should be noted that, based on findings from STI mini records, the percentage of active syphillis among sex workers was 2.67 (57 positive from 2,064 tested). ",
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Thailand",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to May 1 to June 30 of reference year. The data source for this indicator is the HSS among direct and indirect FSW. Direct FSW prevalence = 1.04% (37/3559) and Indirect FSW = 0.4%(35/8650).  The same weights for HIV were used for this indicator which where direct FSW x 0.1 and indirect FSW x 0.9. No numerator and denominator were included in the template because the methodology used included separate weights for each population (i.e. direct and indirect FSW).",
+                "Value": "0.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Thailand",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Result from HIV serosurveillance among FSW. Data was not available among MSW.",
+                "Value": "0.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Thailand",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "8.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "The former Yugoslav republic of Macedonia",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to 2010 Oct 1 to 2011 Feb 17. RDS survey among SW; data presented refers to sample proportions. Population estimates (weighted analysis) are different.",
+                "Value": "1.1"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Timor-Leste",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to August 1 to Dec 31 of reference year. 2011 IBBS.",
+                "Value": "9.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Timor-Leste",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "The 2010 Integrated Behavioural and Biological Survey report has not yet been finalized. Results taken from the draft analysis.",
+                "Value": "8.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Trinidad and Tobago",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Cellma Electronic Management Patient Registers at STI Clinics.",
+                "Value": "10.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Trinidad and Tobago",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data represent the 2 main public health STI clinics in the north & south respectively, however data may be an underestimate.",
+                "Value": "31.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Turkey",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "2.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uganda",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collected from the CRANE Study that is in progress.",
+                "Value": "20.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ukraine",
+                          "YEAR": "2009",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data was obtained through sentinel suveilance study among FSW in 2009. Sample size is 2278 people. ",
+                "Value": "4.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Republic of Tanzania",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: Special studies. Comments: Data are representative. ",
+                "Value": "7.8"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Republic of Tanzania",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 02/08/2010 to 30/10/2010.  Data are not representative.  Data are not consistent with the definition of active syphilis for GARPR.  Comments: The study was conducted in Dar-es-salaam hence not representative of the whole country. ",
+                "Value": "2.0"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uruguay",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: Registro de atenci�n en policl�nicas de control de trabajo sexual.  Data are representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: Corresponds to reports from 41 polyclinics throughout the country (80% of clinics reported these data). These data represent only female sex workers who are controlled.  (Original: Corresponde al reporte de 41 policl�nicas en todo el pa�s (80% de las policl�nicas reportan estos datos). Por lo que este dato representa solo a trabajadores sexuales mujeres que se controlan.)",
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uzbekistan",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "5.4"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uzbekistan",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Cluster sampling.",
+                "Value": "13.2"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Vanuatu",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/01/2011 to 31/12/2011.  Data source: Vanuatu Integrated Bio?Behavioural Survey and Population Size Estimation with Female Sex Workers in Port Vila, Vanuatu, 2011.  Data are not representative.  Data are not consistent with the definition of active syphilis for GARPR.  ",
+                "Value": "3.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "YEAR": "2014",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Source: STI sentinel surveillance integrated with HIV sentinel surveillance.     Comments: Data are representative.",
+                "Value": "1.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "YEAR": "2013",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 01/06/2013 to 31/10/2013.  Data source: Guideline based Decision 09/2012/TT-BYT on HIV/STI surveillance.  Data are not representative.  Data are consistent with the definition of active syphilis for GARPR (both treponemal and non-treponemal test positive).  Comments: Implemented only 10/63 provinces, these provinces are high HIV/AIDS epidemic. ",
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data collection period: 2012 June 01 to 2012 September 30. Data source: STI sentinel surveillance.",
+                "Value": "0.7"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data refers to June 1 to Sept 9 of reference year. Numerator and denominator were collected from  the “Integrating short behaviour survey in to the routine HIV Sentinel surveillance” (HSS plus) in 2011.",
+                "Value": "0.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "YEAR": "2010",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "This data is not representative of national FSWs population because it was collectted only from hot-spots of FSWs in proviinces/cities with high HIV prevalance. Data on male SWs is not available.",
+                "Value": "1.6"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data reported from 8 of 10 STI sentinel surveillance provinces: Hanoi, Hochiminh city, Haiphong, Quangninh, Angiang, Nghean, Cantho, and Khanhhoa.",
+                "Value": "2.5"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Yemen",
+                          "YEAR": "2008",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "4.9"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zimbabwe",
+                          "YEAR": "2012",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Comments": "Data source: CESHHAR project routine data. May not be representative of the population.",
+                "Value": "12.3"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zimbabwe",
+                          "YEAR": "2011",
+                          "GHO": "Sex workers with active syphilis (%)"
+                        },
+                "Value": "12.2"
+              }
+      ]
+}

@@ -1,7 +1,3 @@
-import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
-import React from 'react';
-import _ from 'lodash';
-
 export const dataFunction = function (data, alcohol) {
   var inputData = [];
   //go through the data
@@ -83,29 +79,29 @@ export const filterAll = data => {
 };
 
 //I have no idea what the point of this is, as the fact is that it does not appear to be used anywhere.
-export const flatten = data => {
-  const renderCustom = (cell, row, extra) => {
-    const value = _.get(row, extra.path);
-    return <div>{value}</div>;
-  };
+// export const flatten = data => {
+//   const renderCustom = (cell, row, extra) => {
+//     const value = _.get(row, extra.path);
+//     return <div>{value}</div>;
+//   };
 
-  const columns = [
-    { path: 'id', title: 'ID', isKey: true },
-    { path: 'animal.cat', title: 'Cat' }
-  ];
+//   const columns = [
+//     { path: 'id', title: 'ID', isKey: true },
+//     { path: 'animal.cat', title: 'Cat' }
+//   ];
 
-  const tableColumn = _.map(columns, column => (
-    <TableHeaderColumn
-      dataField={column.path}
-      dataFormat={renderCustom}
-      formatExtraData={column}
-      isKey={column.isKey}
-      key={column.path}
-    >
-      {column.title}
-    </TableHeaderColumn>
-  ));
-};
+//   const tableColumn = _.map(columns, column => (
+//     <TableHeaderColumn
+//       dataField={column.path}
+//       dataFormat={renderCustom}
+//       formatExtraData={column}
+//       isKey={column.isKey}
+//       key={column.path}
+//     >
+//       {column.title}
+//     </TableHeaderColumn>
+//   ));
+// };
 
 export const separateDataByYears = (data, title) => {
   data = data[title]
@@ -127,7 +123,6 @@ export const separateDataByYears = (data, title) => {
 
 export const averageDataByYear = (data) => {
   let averagedData = {},
-    j = 0,
     k = 0
   //loop through each year in the dataset
   data.forEach((obj) => {
@@ -142,14 +137,12 @@ export const averageDataByYear = (data) => {
           averagedData[key] = +obj[key];
         }
       }
-      //go to next index in the array
-      j++;
     }
     k++;
   })
   //k is the amount of years that were gone through, so divide by that number for the average
-  for(var key in averagedData) {
-    averagedData[key] = averagedData[key]/k
+  for (var key in averagedData) {
+    averagedData[key] = averagedData[key] / k
   }
   return averagedData
 }
@@ -157,15 +150,15 @@ export const averageDataByYear = (data) => {
 export const filterBySex = (sex, data, key, year) => {
   //key is the title, year is the one desired
   let filteredData = data[key][year].filter((obj) => {
-    if(sex === obj.sex) return obj
+    if (sex === obj.sex) return obj
   })
   return filteredData
 }
 
 export const turnStringsIntoFloats = (data, key) => {
-  data.map( obj => {
+  data.map(obj => {
     //sometimes a value is null which converts to NaN for the chart
-    if(obj[key] !== null) {
+    if (obj[key] !== null) {
       obj[key] = parseFloat(obj[key])
     }
     else {
@@ -176,10 +169,59 @@ export const turnStringsIntoFloats = (data, key) => {
 }
 
 export const deleteNaN = (data, key) => {
-  data = data.filter( obj => {
-    if(!isNaN(obj[key])) {
+  data = data.filter(obj => {
+    if (!isNaN(obj[key])) {
       return obj
     }
   })
   return data
+}
+
+//here the data that has No Value, other wierd things as a value is filtered out first,
+export const filterTable = data => {
+  return data.filter(row => {
+    let value = row.Value;
+    if (!value || value === 'No data' || value === 'Not applicable') {
+      return false;
+    } else return true;
+  });
+};
+
+//then when the numbers are odd with brackets, etc. It is turned into a float or an int that can easily be worked with.
+export const mapTable = data => {
+  return data.map(row => {
+    let value = row.Value;
+    let charCode = value.charCodeAt(0);
+    let bracketIndex = value.indexOf('[') > -1;
+    if (charCode > 64 && !bracketIndex) return row;
+    else if (value[0] === '<' || value[0] === '>') {
+      value = value.split(' ')[0].slice(1);
+      row.Value = value;
+      return row;
+    } else if (value.indexOf(' ') > -1) {
+      if (bracketIndex) {
+        value = value.split('[')[0];
+        row.Value = value;
+        return row;
+      }
+      value = value.split(' ').join('');
+      row.Value = value;
+      return row;
+    } else {
+      return row;
+    }
+  });
+};
+
+export const initialReformat = (data) => {
+  let temp = {}
+  //initially the data has a fact property with all needed data within.
+  return data.fact.map(row => {
+    //data is then structured as so: {dims: {...stuff}, Value: some_value, ...}
+    temp = row.Value;
+    row = row.dims;
+    row.Value = temp;
+    //now it is as so: {stuff1: something, stuff2: something_else, ..., Value: some_value}
+    return row;
+  });
 }

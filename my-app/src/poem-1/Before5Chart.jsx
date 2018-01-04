@@ -7,8 +7,8 @@ import {
   PolarRadiusAxis
 } from 'recharts';
 import React, { Component } from 'react';
-import axios from 'axios';
-import { dataFunction, filterAll, separateDataByYears, averageDataByYear } from '../utils.js';
+import { dataFunction, filterAll, separateDataByYears, averageDataByYear, filterTable, mapTable, initialReformat } from '../utils.js';
+const BeforeFiveMortality = require('../data/health-child-mortality-births-region.json')
 
 class MortalityBeforeFiveChart extends Component {
   constructor(props) {
@@ -16,22 +16,12 @@ class MortalityBeforeFiveChart extends Component {
     this.state = {
       data: []
     };
-    this.fetchData = this.fetchData.bind(this);
   }
 
   componentDidMount() {
-    this.fetchData();
-  }
-
-  fetchData(state, instance) {
-    axios
-      .get(this.props.url)
-      .then(res => {
-        this.setState({
-          data: res.data
-        });
-      })
-      .catch(err => console.error(err));
+    let data = []
+    data = mapTable(filterTable(initialReformat(BeforeFiveMortality)))
+    this.setState({ data })
   }
 
   render() {
