@@ -74,6 +74,7 @@ export const filterAll = data => {
       }
     });
   }
+  console.log(secondFilter)
   //should return an array that contains a title as a key, an array of objects specifying years arrays as the value. Each of these arrays contains all of the row related to the year.
   return secondFilter;
 };
@@ -224,4 +225,8 @@ export const initialReformat = (data) => {
     //now it is as so: {stuff1: something, stuff2: something_else, ..., Value: some_value}
     return row;
   });
+}
+
+export const averageMaleFemale = (data) => {
+
 }

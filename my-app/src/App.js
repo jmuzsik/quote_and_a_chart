@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import OpenDefChart from './poem-1/OpenDefChart';
+import HIVKnowledge from './poem-1/HIVKnowledge';
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
         <p className="App-intro">
           This is meaningless text.
         </p>
-        <OpenDefChart />
+        <HIVKnowledge />
       </div>
     );
   }
