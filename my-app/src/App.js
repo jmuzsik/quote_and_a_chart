@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import HIVKnowledge from './poem-1/HIVKnowledge';
+import SexWorkersSyphilis from './poem-1/SexWorkersSyphilis';
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
         <p className="App-intro">
           This is meaningless text.
         </p>
-        <HIVKnowledge />
+        <SexWorkersSyphilis />
       </div>
     );
   }

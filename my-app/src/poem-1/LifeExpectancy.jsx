@@ -1,6 +1,6 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import React, { Component } from 'react';
-import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
+import { dataFunction, filterAll, mapTable, filterTable, initialReformat, filterBySex } from '../utils.js';
 const LifeExpectancyData = require('../data/life-expectancy.json');
 
 class LifeExpectancy extends Component {
@@ -24,95 +24,119 @@ class LifeExpectancy extends Component {
     if (this.state.data.length > 0) {
       //format data so that data can be utilised by year... [title: {year: [obj_with_data, ...], ...}, ...]
       data = filterAll(dataFunction(this.state.data));
-      //what exact countries do I want to show data for?
-      data =
-        data[
-        'Knowlege about sexual transmission of AIDS'
-        ];
-      //set each country as a 'dataKey' with value what is shown on the chart.
-      for (var key in data) {
-        finalData.push({ year: key });
-        data[key].forEach(obj => {
-          //do this in case there is a male and female to average the data between gender
-          if(parseFloat(finalData[i][obj.country]) > 0) {
-            finalData[i][obj.country] = (finalData[i][obj.country] + +obj.value)/2
-          }
-          //otherwise set to value if only male or female, or first instance of either
-          else finalData[i][obj.country] = +obj.value;
-        });
-        i++;
-      }
+      data = filterBySex('Both sexes', data, 'Life expectancy at birth (years)', 2015)
+      //for a bar the table must be used to compare data based upon a datakey for the x-axis, a specific dataKey for each country works
+      finalData[i] = {};
+      finalData[i].xaxis = ''
+      //because I could not put each country as its own x-axis value I had to give them an individual one, so only one object is made with the country/value I want
+      data.forEach(obj => {
+        if (obj.country === "Afghanistan") {
+          finalData[i].Afghanistan = +obj.value;
+        }
+        if (obj.country === "Switzerland") {
+          finalData[i].Switzerland = +obj.value;
+        }
+        if (obj.country === "Nigeria") {
+          finalData[i].Nigeria = +obj.value;
+        }
+        if (obj.country === "Libya") {
+          finalData[i].Libya = +obj.value;
+        }
+        if (obj.country === "Lesotho") {
+          finalData[i].Lesotho = +obj.value;
+        }
+        if (obj.country === "Syrian Arab Republic") {
+          finalData[i]['Syrian Arab Republic'] = +obj.value;
+        }
+        if (obj.country === "Viet Nam") {
+          finalData[i]['Viet Nam'] = +obj.value;
+        }
+        if (obj.country === "Malawi") {
+          finalData[i].Malawi = +obj.value;
+        }
+        if (obj.country === "France") {
+          finalData[i].France = +obj.value;
+        }
+        if (obj.country === "Madagascar") {
+          finalData[i].Madagascar = +obj.value;
+        }
+        if (obj.country === "United States of America") {
+          finalData[i]['United States of America'] = +obj.value;
+        }
+        if (obj.country === "Uzbekistan") {
+          finalData[i].Uzbekistan = +obj.value;
+        }
+        if (obj.country === "Saudi Arabia") {
+          finalData[i]['Saudi Arabia'] = +obj.value;
+        }
+      });
     }
-    console.log(finalData)
     return (
       <div>
-        <h5>Knowlege about sexual transmission of AIDS (Average Both Sexes)</h5>
-        <LineChart
-          width={600}
-          height={400}
+        <h5>Life expectancy at birth (years) 2015 Data set (Both sexes averaged)</h5>
+        <BarChart
+          width={1000}
+          height={300}
           data={finalData}
-          margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
-          <XAxis dataKey="year" />
+          <XAxis dataKey="xaxis" />
           <YAxis />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
-          <Line connectNulls={true} type="monotone" dataKey="Zambia" stroke="black" />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Bangladesh"
-            stroke="green"
+          <Bar
+            dataKey="Afghanistan"
+            fill="black"
           />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Bolivia (Plurinational State of"
-            stroke="purple"
+          <Bar
+            dataKey="Switzerland"
+            fill="green"
           />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Cameroon"
-            stroke="orange"
+          <Bar
+            dataKey="Nigeria"
+            fill="purple"
           />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Ghana"
-            stroke="brown"
+          <Bar
+            dataKey="Libya"
+            fill="orange"
           />
-          <Line
-            connectNulls={true}
-            type="monotone"
+          <Bar
+            dataKey="Lesotho"
+            fill="brown"
+          />
+          <Bar
+            dataKey="Syrian Arab Republic"
+            fill="#C90016"
+          />
+          <Bar
+            dataKey="Viet Nam"
+            fill="red"
+          />
+          <Bar
             dataKey="Malawi"
-            stroke="#C90016"
+            fill="pink"
           />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Nepal"
-            stroke="red"
+          <Bar
+            dataKey="United States of America"
+            fill="grey"
           />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Zimbabwe"
-            stroke="maroon"
+          <Bar
+            dataKey="France"
+            fill="blue"
           />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="United Republic of Tanzania"
-            stroke="grey"
+          <Bar
+            dataKey="Uzbekistan"
+            fill="gold"
           />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Peru"
-            stroke="#6082B6"
+          <Bar
+            dataKey="Saudi Arabia"
+            fill="maroon"
           />
-        </LineChart>
+          <Bar
+            dataKey="Madagascar"
+            fill="lime"
+          />
+        </BarChart>
       </div>
     );
   }

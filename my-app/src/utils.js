@@ -13,7 +13,8 @@ export const dataFunction = function (data, alcohol) {
       socialCostType = row.SOCIALCOSTTYPE || null,
       ageGroup = row.AGEGROUP || null,
       advertisingType = row.ADVERTISINGTYPE || null,
-      residenceAreaType = row.RESIDENCEAREATYPE || null;
+      residenceAreaType = row.RESIDENCEAREATYPE || null,
+      whoIncomeRegion = row.WHOINCOMEREGION || null;
     //set first object to all values it can possible have
     inputData[i] = {};
     inputData[i].title = tableTitle;
@@ -22,10 +23,11 @@ export const dataFunction = function (data, alcohol) {
     if (region) inputData[i].region = region;
     if (year) inputData[i].year = year;
     if (sex) inputData[i].sex = sex;
+    if (whoIncomeRegion) inputData[i].region = whoIncomeRegion;
+    if (ageGroup) inputData[i].agegroup = ageGroup;
     //alcohol only has to do with certain datasets
     if (alcohol) {
       if (socialCostType) inputData[i].socialCostType = socialCostType;
-      if (ageGroup) inputData[i].ageGroup = ageGroup;
       if (advertisingType) inputData[i].advertisingType = advertisingType;
       if (alcoholType) inputData[i].alcoholType = alcoholType;
     }
@@ -74,7 +76,6 @@ export const filterAll = data => {
       }
     });
   }
-  console.log(secondFilter)
   //should return an array that contains a title as a key, an array of objects specifying years arrays as the value. Each of these arrays contains all of the row related to the year.
   return secondFilter;
 };
@@ -227,6 +228,9 @@ export const initialReformat = (data) => {
   });
 }
 
-export const averageMaleFemale = (data) => {
-
+export const filterByAgeGroup = (data, ageGroup) => {
+  console.log(data)
+  return data.filter( row => {
+    if(row.agegroup === ageGroup) return row;
+  })
 }
