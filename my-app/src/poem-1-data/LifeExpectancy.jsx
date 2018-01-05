@@ -1,4 +1,4 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat, filterBySex } from '../utils.js';
 const LifeExpectancyData = require('../data/life-expectancy.json');
@@ -72,13 +72,12 @@ class LifeExpectancy extends Component {
       });
     }
     return (
-      <div>
-        <h5>Life expectancy at birth (years) 2015 Data set (Both sexes averaged)</h5>
+      <div className="chart life-expectancy">
+        {/* <h5>Life expectancy at birth (years) 2015 Data set (Both sexes averaged)</h5> */}
         <BarChart
-          width={1000}
+          width={300}
           height={300}
           data={finalData}
-          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
           <XAxis dataKey="xaxis" />
           <YAxis />

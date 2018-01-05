@@ -19,17 +19,17 @@ class AlcoholDeaths extends Component {
 
   render() {
     let data = [],
-      options = {};
+      finalData = []
     if (this.state.data.length > 0) {
       data = filterAll(dataFunction(this.state.data, 'alcohol'));
       data = filterBySex('Both sexes', data, 'Alcohol-attributable fractions, all-cause deaths (%)', '2012')
-      data = turnStringsIntoFloats(data, 'value')
+      finalData = turnStringsIntoFloats(data, 'value')
       var selectRowProp = {
         bgColor: 'rgb(238, 193, 213)'
       };
     }
     return (
-      this.state.data.length > 0 && (
+      <div className="chart alcohol">
         <BootstrapTable
           selectRow={selectRowProp}
           striped
@@ -37,8 +37,8 @@ class AlcoholDeaths extends Component {
           search
           multiColumnSearch
           pagination
-          tableStyle={ {width:'80%', position:'relative', left: '10vw'} }
-          data={data}
+          tableStyle={{ width: '80%', position: 'relative', left: '10vw' }}
+          data={finalData}
         >
           <TableHeaderColumn row="0" colSpan="4" dataAlign="center">
             Alcohol-attributable fractions, all-cause deaths (%) Both Sexes 2012
@@ -61,9 +61,8 @@ class AlcoholDeaths extends Component {
             Value
           </TableHeaderColumn>
         </BootstrapTable>
-
-      )
-    );
+      </div>
+    )
   }
 }
 

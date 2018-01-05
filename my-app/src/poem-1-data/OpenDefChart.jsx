@@ -1,9 +1,16 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip
+} from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
-const HIVKnowledgeData = require('../data/diseases-hiv-knowledge.json');
+const OpenDefData = require('../data/open-defecation.json');
 
-class HIVKnowledge extends Component {
+class OpenDefChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,7 +20,7 @@ class HIVKnowledge extends Component {
 
   componentDidMount() {
     let data = []
-    data = mapTable(filterTable(initialReformat(HIVKnowledgeData)))
+    data = mapTable(filterTable(initialReformat(OpenDefData)))
     this.setState({ data })
   }
 
@@ -24,86 +31,90 @@ class HIVKnowledge extends Component {
     if (this.state.data.length > 0) {
       //format data so that data can be utilised by year... [title: {year: [obj_with_data, ...], ...}, ...]
       data = filterAll(dataFunction(this.state.data));
-      //what exact countries do I want to show data for?
+      console.log(data)
       data =
         data[
-        'Knowlege about sexual transmission of AIDS'
+        'Population not using any sanitation facility (open defecation) (%)'
         ];
-      //set each country as a 'dataKey' with value what is shown on the chart.
       for (var key in data) {
         finalData.push({ year: key });
         data[key].forEach(obj => {
-          //do this in case there is a male and female to average the data between gender
-          if(parseFloat(finalData[i][obj.country]) > 0) {
-            finalData[i][obj.country] = (finalData[i][obj.country] + +obj.value)/2
-          }
-          //otherwise set to value if only male or female, or first instance of either
-          else finalData[i][obj.country] = +obj.value;
+          finalData[i][obj.country] = +obj.value;
         });
         i++;
       }
     }
-    console.log(finalData)
+
     return (
-      <div>
-        <h5>Knowlege about sexual transmission of AIDS (Average Both Sexes)</h5>
+      <div className="chart open-def">
+        {/* <h5 className='title'>{this.state.data.length > 0 && data['1990'][0].title}</h5> */}
         <LineChart
-          width={600}
-          height={400}
+          width={300}
+          height={300}
           data={finalData}
-          margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
         >
           <XAxis dataKey="year" />
           <YAxis />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
-          <Line connectNulls={true} type="monotone" dataKey="Zambia" stroke="black" />
           <Line
             connectNulls={true}
             type="monotone"
-            dataKey="Bangladesh"
-            stroke="green"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Bolivia (Plurinational State of"
-            stroke="purple"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Cameroon"
-            stroke="orange"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Ghana"
-            stroke="brown"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Malawi"
-            stroke="#C90016"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Nepal"
-            stroke="red"
+            dataKey="Colombia"
+            stroke="black"
           />
           <Line
             connectNulls={true}
             type="monotone"
             dataKey="Zimbabwe"
-            stroke="maroon"
+            stroke="green"
+          />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Zambia"
+            stroke="purple"
+          />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Viet Nam"
+            stroke="orange"
           />
           <Line
             connectNulls={true}
             type="monotone"
             dataKey="United Republic of Tanzania"
+            stroke="black"
+          />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Uganda"
+            stroke="brown"
+          />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Togo"
+            stroke="#C90016"
+          />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Sierra Leone"
+            stroke="red"
+          />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Senegal"
+            stroke="maroon"
+          />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Philippines"
             stroke="grey"
           />
           <Line
@@ -112,10 +123,28 @@ class HIVKnowledge extends Component {
             dataKey="Peru"
             stroke="#6082B6"
           />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Nepal"
+            stroke="#D4AF37"
+          />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Ghana"
+            stroke="#00FF00"
+          />
+          <Line
+            connectNulls={true}
+            type="monotone"
+            dataKey="Cameroon"
+            stroke="#5218FA"
+          />
         </LineChart>
       </div>
     );
   }
 }
 
-export default HIVKnowledge;
+export default OpenDefChart;

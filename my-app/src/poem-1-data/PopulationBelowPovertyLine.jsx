@@ -4,9 +4,7 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer
+  Tooltip
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
@@ -35,9 +33,9 @@ class PopulationBelowPovertyLine extends Component {
       data = filterAll(dataFunction(this.state.data));
       console.log(data)
       //Côte d'Ivoire
-        data = data [
+      data = data[
         'Proportion of population below the international poverty line of US$1.90 per day (%)'
-        ];
+      ];
       for (var key in data) {
         finalData.push({ year: key });
         data[key].forEach(obj => {
@@ -48,13 +46,12 @@ class PopulationBelowPovertyLine extends Component {
     }
 
     return (
-      <div>
-        <h5 className='title'>{this.state.data.length > 0 && data['1990'][0].title}</h5>
+      <div className="chart below-poverty-line">
+        {/* <h5>Proportion of population below the international poverty line of US$1.90 per day (%)</h5> */}
         <LineChart
-          width={730}
-          height={500}
+          width={300}
+          height={300}
           data={finalData}
-          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
           <XAxis dataKey="year" />
           <YAxis />

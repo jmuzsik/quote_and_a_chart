@@ -1,18 +1,9 @@
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer
-} from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
-const OpenDefData = require('../data/open-defecation.json');
+const HIVKnowledgeData = require('../data/diseases-hiv-knowledge.json');
 
-class OpenDefChart extends Component {
+class HIVKnowledge extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,7 +13,7 @@ class OpenDefChart extends Component {
 
   componentDidMount() {
     let data = []
-    data = mapTable(filterTable(initialReformat(OpenDefData)))
+    data = mapTable(filterTable(initialReformat(HIVKnowledgeData)))
     this.setState({ data })
   }
 
@@ -33,87 +24,84 @@ class OpenDefChart extends Component {
     if (this.state.data.length > 0) {
       //format data so that data can be utilised by year... [title: {year: [obj_with_data, ...], ...}, ...]
       data = filterAll(dataFunction(this.state.data));
-      console.log(data)
+      //what exact countries do I want to show data for?
       data =
         data[
-        'Population not using any sanitation facility (open defecation) (%)'
+        'Knowlege about sexual transmission of AIDS'
         ];
+      //set each country as a 'dataKey' with value what is shown on the chart.
       for (var key in data) {
         finalData.push({ year: key });
         data[key].forEach(obj => {
-          finalData[i][obj.country] = +obj.value;
+          //do this in case there is a male and female to average the data between gender
+          if (parseFloat(finalData[i][obj.country]) > 0) {
+            finalData[i][obj.country] = (finalData[i][obj.country] + +obj.value) / 2
+          }
+          //otherwise set to value if only male or female, or first instance of either
+          else finalData[i][obj.country] = +obj.value;
         });
         i++;
       }
     }
-
     return (
-      <div>
-        <h5 className='title'>{this.state.data.length > 0 && data['1990'][0].title}</h5>
+      <div className="chart HIV">
+        {/* <h5>Knowlege about sexual transmission of AIDS (Average Both Sexes)</h5> */}
         <LineChart
-          width={730}
-          height={500}
+          width={300}
+          height={300}
           data={finalData}
-          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
           <XAxis dataKey="year" />
           <YAxis />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="Colombia" stroke="black" />
+          <Line connectNulls={true} type="monotone" dataKey="Zambia" stroke="black" />
           <Line
             connectNulls={true}
             type="monotone"
-            dataKey="Zimbabwe"
+            dataKey="Bangladesh"
             stroke="green"
           />
           <Line
             connectNulls={true}
             type="monotone"
-            dataKey="Zambia"
+            dataKey="Bolivia (Plurinational State of"
             stroke="purple"
           />
           <Line
             connectNulls={true}
             type="monotone"
-            dataKey="Viet Nam"
+            dataKey="Cameroon"
             stroke="orange"
           />
           <Line
             connectNulls={true}
             type="monotone"
-            dataKey="United Republic of Tanzania"
-            stroke="black"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Uganda"
+            dataKey="Ghana"
             stroke="brown"
           />
           <Line
             connectNulls={true}
             type="monotone"
-            dataKey="Togo"
+            dataKey="Malawi"
             stroke="#C90016"
           />
           <Line
             connectNulls={true}
             type="monotone"
-            dataKey="Sierra Leone"
+            dataKey="Nepal"
             stroke="red"
           />
           <Line
             connectNulls={true}
             type="monotone"
-            dataKey="Senegal"
+            dataKey="Zimbabwe"
             stroke="maroon"
           />
           <Line
             connectNulls={true}
             type="monotone"
-            dataKey="Philippines"
+            dataKey="United Republic of Tanzania"
             stroke="grey"
           />
           <Line
@@ -122,28 +110,10 @@ class OpenDefChart extends Component {
             dataKey="Peru"
             stroke="#6082B6"
           />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Nepal"
-            stroke="#D4AF37"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Ghana"
-            stroke="#00FF00"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Cameroon"
-            stroke="#5218FA"
-          />
         </LineChart>
       </div>
     );
   }
 }
 
-export default OpenDefChart;
+export default HIVKnowledge;

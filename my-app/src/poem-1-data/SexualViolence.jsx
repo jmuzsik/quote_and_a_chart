@@ -29,7 +29,7 @@ class SexualViolence extends Component {
       finalData[i] = {};
       finalData[i].xaxis = ''
       //because I could not put each country as its own x-axis value I had to give them an individual one, so only one object is made with the country/value I want
-      for(var key in data) {
+      for (var key in data) {
         //basically grab the last year that data was available for the country
         data[key].forEach(obj => {
           finalData[i][obj.country] = parseFloat(obj.value)
@@ -37,13 +37,12 @@ class SexualViolence extends Component {
       }
     }
     return (
-      <div>
-        <h5>Proportion of young women and men aged 18-29 years who experienced sexual violence by age 18 (%) - Most recent data</h5>
+      <div className="chart sexual-violence">
+        {/* <h5>Proportion of young women and men aged 18-29 years who experienced sexual violence by age 18 (%) - Most recent data</h5> */}
         <BarChart
-          width={1000}
+          width={300}
           height={300}
           data={finalData}
-          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
           <XAxis dataKey="xaxis" />
           <YAxis />
