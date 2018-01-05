@@ -31,7 +31,6 @@ class OpenDefChart extends Component {
     if (this.state.data.length > 0) {
       //format data so that data can be utilised by year... [title: {year: [obj_with_data, ...], ...}, ...]
       data = filterAll(dataFunction(this.state.data));
-      console.log(data)
       data =
         data[
         'Population not using any sanitation facility (open defecation) (%)'

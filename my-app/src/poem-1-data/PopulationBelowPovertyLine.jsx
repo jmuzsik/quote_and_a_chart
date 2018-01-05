@@ -31,8 +31,6 @@ class PopulationBelowPovertyLine extends Component {
     if (this.state.data.length > 0) {
       //format data so that data can be utilised by year... [title: {year: [obj_with_data, ...], ...}, ...]
       data = filterAll(dataFunction(this.state.data));
-      console.log(data)
-      //Côte d'Ivoire
       data = data[
         'Proportion of population below the international poverty line of US$1.90 per day (%)'
       ];

@@ -229,7 +229,6 @@ export const initialReformat = (data) => {
 }
 
 export const filterByAgeGroup = (data, ageGroup) => {
-  console.log(data)
   return data.filter( row => {
     if(row.agegroup === ageGroup) return row;
   })

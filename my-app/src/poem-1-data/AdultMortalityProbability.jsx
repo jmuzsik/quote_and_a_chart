@@ -35,7 +35,6 @@ class AdultMortalityProbability extends Component {
       //averages data from all years based upon region, {region1: data1, ...}
       dataFilter = filterBySex('Both sexes', data, 'Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)', 2015)
       //format data to be read by recharts)
-      console.log(dataFilter)
       dataFilter.forEach(row => {
         formatData[j] = {}
         formatData[j].region = row.region
