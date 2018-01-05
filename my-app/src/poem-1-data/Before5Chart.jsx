@@ -3,7 +3,8 @@ import {
   RadarChart,
   PolarGrid,
   PolarAngleAxis,
-  PolarRadiusAxis
+  PolarRadiusAxis,
+  Tooltip
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, separateDataByYears, averageDataByYear, filterTable, mapTable, initialReformat } from '../utils.js';
@@ -37,7 +38,7 @@ class MortalityBeforeFiveChart extends Component {
       for (var key in dataFilter) {
         formatData[j] = {}
         formatData[j].region = key
-        formatData[j].value = dataFilter[key]
+        formatData[j].value = parseInt(dataFilter[key], 10)
         j++
       }
     }
@@ -53,6 +54,7 @@ class MortalityBeforeFiveChart extends Component {
           <PolarGrid />
           <PolarAngleAxis dataKey="region" />
           <PolarRadiusAxis />
+          <Tooltip />
           <Radar
             dataKey="value"
             stroke="#8884d8"

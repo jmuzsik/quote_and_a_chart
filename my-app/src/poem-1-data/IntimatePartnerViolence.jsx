@@ -3,7 +3,8 @@ import {
   RadarChart,
   PolarGrid,
   PolarAngleAxis,
-  PolarRadiusAxis
+  PolarRadiusAxis,
+  Tooltip
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, filterTable, mapTable, initialReformat, filterByAgeGroup } from '../utils.js';
@@ -50,6 +51,7 @@ class IntimatePartnerViolence extends Component {
           <PolarGrid />
           <PolarAngleAxis dataKey="region" />
           <PolarRadiusAxis />
+          <Tooltip />
           <Radar
             name="Africa"
             dataKey="value"

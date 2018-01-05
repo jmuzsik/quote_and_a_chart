@@ -3,7 +3,8 @@ import {
   RadarChart,
   PolarGrid,
   PolarAngleAxis,
-  PolarRadiusAxis
+  PolarRadiusAxis,
+  Tooltip
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, filterTable, mapTable, initialReformat, filterBySex } from '../utils.js';
@@ -54,6 +55,7 @@ class AdultMortalityProbability extends Component {
           <PolarGrid />
           <PolarAngleAxis dataKey="region" />
           <PolarRadiusAxis />
+          <Tooltip />
           <Radar
             dataKey="value"
             stroke="#8884d8"
