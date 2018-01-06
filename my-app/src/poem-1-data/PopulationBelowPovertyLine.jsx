@@ -8,20 +8,28 @@ import {
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
+import { WikiquoteApi, error } from '../WikiQuote.js'
+
 const PopulationBelowPovLineData = require('../data/population-below-poverty-line.json');
 
 class PopulationBelowPovertyLine extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      quote: ""
     };
+    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    let data = []
+    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
+  }
+
+  success(wikiData) {
+    let quote = wikiData.quote, data = []
     data = mapTable(filterTable(initialReformat(PopulationBelowPovLineData)))
-    this.setState({ data })
+    this.setState({ quote, data })
   }
 
   render() {
@@ -45,7 +53,9 @@ class PopulationBelowPovertyLine extends Component {
 
     return (
       <div className="chart below-poverty-line">
-        {/* <h5>Proportion of population below the international poverty line of US$1.90 per day (%)</h5> */}
+        <p>{this.state.quote}</p>
+
+        <h5>Proportion of population below the international poverty line of US$1.90 per day (%)</h5>
         <LineChart
           width={300}
           height={300}

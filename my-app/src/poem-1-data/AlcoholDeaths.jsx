@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
 import { dataFunction, filterAll, filterBySex, turnStringsIntoFloats, mapTable, filterTable, initialReformat } from '../utils.js';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+import { WikiquoteApi, error } from '../WikiQuote.js'
+
 const AlcoholConumptionDeaths = require('../data/alcohol-consumption-related-deaths.json');
 
 class AlcoholDeaths extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      quote: ""
     };
+    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    let data = []
+    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
+  }
+
+  success (wikiData) {
+    let quote = wikiData.quote, data = []
     data = mapTable(filterTable(initialReformat(AlcoholConumptionDeaths)))
-    this.setState({ data })
+    this.setState({quote, data})
   }
 
   render() {
@@ -30,6 +38,7 @@ class AlcoholDeaths extends Component {
     }
     return (
       <div className="chart alcohol">
+      <p>{this.state.quote}</p>
         <BootstrapTable
           selectRow={selectRowProp}
           striped

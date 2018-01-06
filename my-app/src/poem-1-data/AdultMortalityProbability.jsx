@@ -8,20 +8,31 @@ import {
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, filterTable, mapTable, initialReformat, filterBySex } from '../utils.js';
+import { WikiquoteApi, error } from '../WikiQuote.js'
+
 const AdultMortalityProbabilityData = require('../data/adult-mortality-region.json')
+
+
+
 
 class AdultMortalityProbability extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      quote: ""
     };
+    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    let data = []
+    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
+  }
+
+  success (wikiData) {
+    let quote = wikiData.quote, data = []
     data = mapTable(filterTable(initialReformat(AdultMortalityProbabilityData)))
-    this.setState({ data })
+    this.setState({quote, data})
   }
 
   render() {
@@ -44,8 +55,9 @@ class AdultMortalityProbability extends Component {
     }
     return (
       <div className='chart a-mortality'>
-        {/* <h6 className="title">Adult mortality rate (probability of dying between 15 and 60 years per 1000 population) - 2015
-        </h6> */}
+        <p>{this.state.quote}</p>
+        <h6 className="title">Adult mortality rate (probability of dying between 15 and 60 years per 1000 population) - 2015
+        </h6>
         <RadarChart
           width={300}
           height={300}
@@ -62,7 +74,7 @@ class AdultMortalityProbability extends Component {
             fillOpacity={0.7}
           />
         </RadarChart>
-      </div>
+      </div >
     );
   }
 }

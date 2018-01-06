@@ -1,20 +1,28 @@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
+import { WikiquoteApi, error } from '../WikiQuote.js'
+
 const SexWorkersSyphilisData = require('../data/diseases-syphilis-sex-workers-with.json');
 
 class SexWorkersSyphilis extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      quote: ""
     };
+    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    let data = []
+    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
+  }
+
+  success(wikiData) {
+    let quote = wikiData.quote, data = []
     data = mapTable(filterTable(initialReformat(SexWorkersSyphilisData)))
-    this.setState({ data })
+    this.setState({ quote, data })
   }
 
   render() {
@@ -40,7 +48,9 @@ class SexWorkersSyphilis extends Component {
     }
     return (
       <div className="chart syphilis">
-        {/* <h5>Proportion of young women and men aged 18-29 years who experienced sexual violence by age 18 (%) - Most recent data (about 2013)</h5> */}
+        <p>{this.state.quote}</p>
+
+        <h5>Proportion of young women and men aged 18-29 years who experienced sexual violence by age 18 (%) - Most recent data (about 2013)</h5>
         <BarChart
           width={300}
           height={300}

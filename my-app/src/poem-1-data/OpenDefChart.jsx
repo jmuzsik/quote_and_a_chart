@@ -8,20 +8,28 @@ import {
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
+import { WikiquoteApi, error } from '../WikiQuote.js'
+
 const OpenDefData = require('../data/open-defecation.json');
 
 class OpenDefChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      quote: ""
     };
+    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    let data = []
+    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
+  }
+
+  success(wikiData) {
+    let quote = wikiData.quote, data = []
     data = mapTable(filterTable(initialReformat(OpenDefData)))
-    this.setState({ data })
+    this.setState({ quote, data })
   }
 
   render() {
@@ -46,7 +54,9 @@ class OpenDefChart extends Component {
 
     return (
       <div className="chart open-def">
-        {/* <h5 className='title'>{this.state.data.length > 0 && data['1990'][0].title}</h5> */}
+        <p>{this.state.quote}</p>
+
+        <h5 className='title'>{this.state.data.length > 0 && data['1990'][0].title}</h5>
         <LineChart
           width={300}
           height={300}

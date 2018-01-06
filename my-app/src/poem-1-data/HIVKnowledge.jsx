@@ -1,20 +1,28 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
+import { WikiquoteApi, error } from '../WikiQuote.js'
+
 const HIVKnowledgeData = require('../data/diseases-hiv-knowledge.json');
 
 class HIVKnowledge extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      quote: ""
     };
+    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    let data = []
+    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
+  }
+
+  success(wikiData) {
+    let quote = wikiData.quote, data = []
     data = mapTable(filterTable(initialReformat(HIVKnowledgeData)))
-    this.setState({ data })
+    this.setState({ quote, data })
   }
 
   render() {
@@ -45,7 +53,8 @@ class HIVKnowledge extends Component {
     }
     return (
       <div className="chart HIV">
-        {/* <h5>Knowlege about sexual transmission of AIDS (Average Both Sexes)</h5> */}
+        <p>{this.state.quote}</p>
+        <h5>Knowlege about sexual transmission of AIDS (Average Both Sexes)</h5>
         <LineChart
           width={300}
           height={300}

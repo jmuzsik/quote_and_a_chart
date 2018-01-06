@@ -32,11 +32,12 @@ div.chart > div {
   background-image: linear-gradient(to bottom, #3498db, #2980b9);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
-  border-radius: 28px;
+  border-radius: 1em;
   color: #ffffff;
-  font-size: 33px;
-  padding: 10px 20px 10px 20px;
-  border: solid #1f628d 5px;
+  font-size: 1em;
+  padding: .5em 1em .5em 1em;
+  margin: .5em;
+  border: solid #1f628d .2em;
   text-decoration: none;
 }
 

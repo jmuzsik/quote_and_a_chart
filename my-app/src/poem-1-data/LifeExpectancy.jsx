@@ -1,20 +1,28 @@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat, filterBySex } from '../utils.js';
+import { WikiquoteApi, error } from '../WikiQuote.js'
+
 const LifeExpectancyData = require('../data/life-expectancy.json');
 
 class LifeExpectancy extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      quote: ""
     };
+    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    let data = []
+    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
+  }
+
+  success(wikiData) {
+    let quote = wikiData.quote, data = []
     data = mapTable(filterTable(initialReformat(LifeExpectancyData)))
-    this.setState({ data })
+    this.setState({ quote, data })
   }
 
   render() {
@@ -73,7 +81,9 @@ class LifeExpectancy extends Component {
     }
     return (
       <div className="chart life-expectancy">
-        {/* <h5>Life expectancy at birth (years) 2015 Data set (Both sexes averaged)</h5> */}
+        <p>{this.state.quote}</p>
+
+        <h5>Life expectancy at birth (years) 2015 Data set (Both sexes averaged)</h5>
         <BarChart
           width={300}
           height={300}

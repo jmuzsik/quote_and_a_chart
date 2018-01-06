@@ -8,20 +8,28 @@ import {
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, separateDataByYears, averageDataByYear, filterTable, mapTable, initialReformat } from '../utils.js';
+import { WikiquoteApi, error } from '../WikiQuote.js'
+
 const BeforeFiveMortality = require('../data/health-child-mortality-births-region.json')
 
 class MortalityBeforeFiveChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      quote: ""
     };
+    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    let data = []
+    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
+  }
+
+  success(wikiData) {
+    let quote = wikiData.quote, data = []
     data = mapTable(filterTable(initialReformat(BeforeFiveMortality)))
-    this.setState({ data })
+    this.setState({ quote, data })
   }
 
   render() {
@@ -44,8 +52,9 @@ class MortalityBeforeFiveChart extends Component {
     }
     return (
       <div className="chart under-five">
-        {/* <h6 className="title">Under-five mortality rate (probability of dying by age 5 per 1000 live births)
-        </h6> */}
+        <p>{this.state.quote}</p>
+        <h6 className="title">Under-five mortality rate (probability of dying by age 5 per 1000 live births)
+        </h6>
         <RadarChart
           width={300}
           height={300}

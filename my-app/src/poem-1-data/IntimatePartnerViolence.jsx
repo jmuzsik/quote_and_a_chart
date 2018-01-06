@@ -8,20 +8,28 @@ import {
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, filterTable, mapTable, initialReformat, filterByAgeGroup } from '../utils.js';
+import { WikiquoteApi, error } from '../WikiQuote.js'
+
 const PartnerViolenceData = require('../data/health-women-violence-relationships.json')
 
 class IntimatePartnerViolence extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: []
+      data: [],
+      quote: ""
     };
+    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    let data = []
+    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
+  }
+
+  success(wikiData) {
+    let quote = wikiData.quote, data = []
     data = mapTable(filterTable(initialReformat(PartnerViolenceData)))
-    this.setState({ data })
+    this.setState({ quote, data })
   }
 
   render() {
@@ -40,9 +48,10 @@ class IntimatePartnerViolence extends Component {
     }
     return (
       <div className="chart partner-violence">
-        {/* <h6 className="title">
+        <p>{this.state.quote}</p>
+        <h6 className="title">
           Intimate partner violence prevalence among ever partnered women (%) - 15-69  (total) years averaged
-        </h6> */}
+        </h6>
         <RadarChart
           width={300}
           height={300}
