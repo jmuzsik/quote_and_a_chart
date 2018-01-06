@@ -37,6 +37,7 @@ class App extends Component {
   onPageChange(value) {
     const currentPage = this.state.currentPage + value
     this.changeTitle(currentPage)
+    console.log(currentPage)
     this.setState({ currentPage })
   }
 

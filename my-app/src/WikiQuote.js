@@ -126,7 +126,6 @@ export const WikiquoteApi = (function () {
           // Remove all children that aren't <b>
           window.$(this).children().remove(':not(b)');
           var $bolds = window.$(this).find('b');
-
           // If the section has bold text, use it.  Otherwise pull the plain text.
           if ($bolds.length > 0) {
             quoteArray.push($bolds.html());
@@ -134,12 +133,12 @@ export const WikiquoteApi = (function () {
             quoteArray.push(window.$(this).html());
           }
         });
-        var threeLongestQuotes = []
+        var fiveLongestQuotes = []
         quoteArray = quoteArray.sort(function(a, b) {
           return b.length - a.length;
         });
-        threeLongestQuotes = quoteArray.slice(0, 3)
-        success({ titles: result.parse.title, quotes: threeLongestQuotes });
+        fiveLongestQuotes = quoteArray.slice(0, 5)
+        success({ titles: result.parse.title, quotes: fiveLongestQuotes });
       },
       error: function (xhr, result, status) {
         error("Error getting quotes");

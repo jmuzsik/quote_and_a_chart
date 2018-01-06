@@ -4,16 +4,16 @@ class Buttons extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage: 0,
       leftButtonDisable: true,
       rightButtonDisable: false
     };
     this.handleChange = this.handleChange.bind(this)
   }
 
-  componentWillReceiveProps() {
-    let currentPage = this.props.currentPage,
+  componentWillReceiveProps(nextProps) {
+    let currentPage = nextProps.currentPage,
       disableButton = ""
+    console.log(currentPage)
     if (currentPage === 0) {
       disableButton = "left"
     }
@@ -48,7 +48,6 @@ class Buttons extends Component {
       value++
       this.props.onPageChange(value)
     }
-    console.log('this is in the buttons!', value)
   }
 
   render() {
