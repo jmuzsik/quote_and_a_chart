@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Chart and a Quote",
+  "name": "WHO Chart and WikiQuote Quote",
   "icons": [
     {
       "src": "favicon.ico",
