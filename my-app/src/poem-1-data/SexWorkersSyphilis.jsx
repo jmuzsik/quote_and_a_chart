@@ -1,4 +1,4 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
 import { WikiquoteApi, error } from '../WikiQuote.js'
@@ -20,7 +20,7 @@ class SexWorkersSyphilis extends Component {
   }
 
   success(wikiData) {
-    let quote = wikiData.quote, data = []
+    let quote = `"${wikiData.quote}"`, data = []
     data = mapTable(filterTable(initialReformat(SexWorkersSyphilisData)))
     this.setState({ quote, data })
   }
@@ -47,72 +47,73 @@ class SexWorkersSyphilis extends Component {
       }
     }
     return (
-      <div className="chart syphilis">
+      <div className="chart bar syphilis">
         <p>{this.state.quote}</p>
 
-        <h5>Proportion of young women and men aged 18-29 years who experienced sexual violence by age 18 (%) - Most recent data (about 2013)</h5>
-        <BarChart
-          width={300}
-          height={300}
-          data={finalData}
-        >
-          <XAxis dataKey="xaxis" />
-          <YAxis />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Tooltip />
-          <Bar
-            dataKey="Brazil"
-            fill="black"
-          />
-          <Bar
-            dataKey="Paraguay"
-            fill="green"
-          />
-          <Bar
-            dataKey="Chile"
-            fill="purple"
-          />
-          <Bar
-            dataKey="China"
-            fill="orange"
-          />
-          <Bar
-            dataKey="Bulgaria"
-            fill="brown"
-          />
-          <Bar
-            dataKey="Dominican Republic"
-            fill="#C90016"
-          />
-          <Bar
-            dataKey="Indonesia"
-            fill="red"
-          />
-          <Bar
-            dataKey="Myanmar"
-            fill="pink"
-          />
-          <Bar
-            dataKey="Zimbabwe"
-            fill="grey"
-          />
-          <Bar
-            dataKey="Senegal"
-            fill="blue"
-          />
-          <Bar
-            dataKey="Algeria"
-            fill="gold"
-          />
-          <Bar
-            dataKey="Mongolia"
-            fill="maroon"
-          />
-          <Bar
-            dataKey="Ghana"
-            fill="lime"
-          />
-        </BarChart>
+        <h6>Proportion of young women and men aged 18-29 years who experienced sexual violence by age 18 (%) - Most recent data (about 2013)</h6>
+        <ResponsiveContainer width='100%' height={300}>
+          <BarChart
+            cx="50%" cy="50%" outerRadius="80%"
+            data={finalData}
+          >
+            <XAxis dataKey="xaxis" />
+            <YAxis />
+            <CartesianGrid strokeDasharray="3 3" />
+            <Tooltip />
+            <Bar
+              dataKey="Brazil"
+              fill="black"
+            />
+            <Bar
+              dataKey="Paraguay"
+              fill="green"
+            />
+            <Bar
+              dataKey="Chile"
+              fill="purple"
+            />
+            <Bar
+              dataKey="China"
+              fill="orange"
+            />
+            <Bar
+              dataKey="Bulgaria"
+              fill="brown"
+            />
+            <Bar
+              dataKey="Dominican Republic"
+              fill="#C90016"
+            />
+            <Bar
+              dataKey="Indonesia"
+              fill="red"
+            />
+            <Bar
+              dataKey="Myanmar"
+              fill="pink"
+            />
+            <Bar
+              dataKey="Zimbabwe"
+              fill="grey"
+            />
+            <Bar
+              dataKey="Senegal"
+              fill="blue"
+            />
+            <Bar
+              dataKey="Algeria"
+              fill="gold"
+            />
+            <Bar
+              dataKey="Mongolia"
+              fill="maroon"
+            />
+            <Bar
+              dataKey="Ghana"
+              fill="lime"
+            />
+          </BarChart>
+        </ResponsiveContainer>
       </div>
     );
   }

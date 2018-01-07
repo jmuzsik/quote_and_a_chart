@@ -133,12 +133,20 @@ export const WikiquoteApi = (function () {
             quoteArray.push(window.$(this).html());
           }
         });
-        var fiveLongestQuotes = []
-        quoteArray = quoteArray.sort(function(a, b) {
+        var filteredQuotes = []
+        quoteArray = quoteArray.sort(function (a, b) {
           return b.length - a.length;
         });
-        fiveLongestQuotes = quoteArray.slice(0, 5)
-        success({ titles: result.parse.title, quotes: fiveLongestQuotes });
+        filteredQuotes = quoteArray.filter((quote) => {
+          if (quote.length < 450) {
+            if(quote.length > 10) {
+              console.log(quote)
+              return quote
+            }
+          }
+        })
+        console.log(quoteArray, filteredQuotes)
+        success({ titles: result.parse.title, quotes: filteredQuotes });
       },
       error: function (xhr, result, status) {
         error("Error getting quotes");

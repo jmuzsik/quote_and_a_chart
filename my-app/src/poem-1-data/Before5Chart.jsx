@@ -4,7 +4,8 @@ import {
   PolarGrid,
   PolarAngleAxis,
   PolarRadiusAxis,
-  Tooltip
+  Tooltip,
+  ResponsiveContainer
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, separateDataByYears, averageDataByYear, filterTable, mapTable, initialReformat } from '../utils.js';
@@ -27,7 +28,7 @@ class MortalityBeforeFiveChart extends Component {
   }
 
   success(wikiData) {
-    let quote = wikiData.quote, data = []
+    let quote = `"${wikiData.quote}"`, data = []
     data = mapTable(filterTable(initialReformat(BeforeFiveMortality)))
     this.setState({ quote, data })
   }
@@ -55,22 +56,24 @@ class MortalityBeforeFiveChart extends Component {
         <p>{this.state.quote}</p>
         <h6 className="title">Under-five mortality rate (probability of dying by age 5 per 1000 live births)
         </h6>
-        <RadarChart
-          width={300}
-          height={300}
-          data={formatData}
-        >
-          <PolarGrid />
-          <PolarAngleAxis dataKey="region" />
-          <PolarRadiusAxis />
-          <Tooltip />
-          <Radar
-            dataKey="value"
-            stroke="#8884d8"
-            fill="#8884d8"
-            fillOpacity={0.6}
-          />
-        </RadarChart>
+        <ResponsiveContainer width='100%' height={300}>
+          <RadarChart
+            cx="50%" cy="50%" outerRadius="80%"
+            data={formatData}
+          >
+            <PolarGrid />
+            <PolarAngleAxis dataKey="region" />
+            <PolarRadiusAxis />
+            <Tooltip />
+            <Radar
+              name="probability"
+              dataKey="value"
+              stroke="#8884d8"
+              fill="#160e68"
+              fillOpacity={0.6}
+            />
+          </RadarChart>
+        </ResponsiveContainer>
       </div>
     );
   }

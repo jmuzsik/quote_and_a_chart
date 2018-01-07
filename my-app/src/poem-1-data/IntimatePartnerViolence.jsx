@@ -4,7 +4,8 @@ import {
   PolarGrid,
   PolarAngleAxis,
   PolarRadiusAxis,
-  Tooltip
+  Tooltip,
+  ResponsiveContainer
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, filterTable, mapTable, initialReformat, filterByAgeGroup } from '../utils.js';
@@ -27,7 +28,7 @@ class IntimatePartnerViolence extends Component {
   }
 
   success(wikiData) {
-    let quote = wikiData.quote, data = []
+    let quote = `"${wikiData.quote}"`, data = []
     data = mapTable(filterTable(initialReformat(PartnerViolenceData)))
     this.setState({ quote, data })
   }
@@ -52,23 +53,24 @@ class IntimatePartnerViolence extends Component {
         <h6 className="title">
           Intimate partner violence prevalence among ever partnered women (%) - 15-69  (total) years averaged
         </h6>
-        <RadarChart
-          width={300}
-          height={300}
-          data={formatData}
-        >
-          <PolarGrid />
-          <PolarAngleAxis dataKey="region" />
-          <PolarRadiusAxis />
-          <Tooltip />
-          <Radar
-            name="Africa"
-            dataKey="value"
-            stroke="#8884d8"
-            fill="#8884d8"
-            fillOpacity={0.6}
-          />
-        </RadarChart>
+        <ResponsiveContainer width='100%' height={300}>
+          <RadarChart
+            cx="50%" cy="50%" outerRadius="80%"
+            data={formatData}
+          >
+            <PolarGrid />
+            <PolarAngleAxis dataKey="region" />
+            <PolarRadiusAxis />
+            <Tooltip />
+            <Radar
+              name="Percent"
+              dataKey="value"
+              stroke="#8884d8"
+              fill="#8884d8"
+              fillOpacity={0.6}
+            />
+          </RadarChart>
+        </ResponsiveContainer>
       </div>
     );
   }

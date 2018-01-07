@@ -23,12 +23,23 @@ h3 {
 }
 p {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 30px;
 }
+
+h6 {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: small-caps;
+	text-decoration: underline;
+	font-weight: 400;
+	line-height: 30px;
+}
+
 blockquote {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-size: 21px;

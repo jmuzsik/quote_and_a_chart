@@ -1,4 +1,4 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat, filterBySex } from '../utils.js';
 import { WikiquoteApi, error } from '../WikiQuote.js'
@@ -20,7 +20,7 @@ class LifeExpectancy extends Component {
   }
 
   success(wikiData) {
-    let quote = wikiData.quote, data = []
+    let quote = `"${wikiData.quote}"`, data = []
     data = mapTable(filterTable(initialReformat(LifeExpectancyData)))
     this.setState({ quote, data })
   }
@@ -80,72 +80,72 @@ class LifeExpectancy extends Component {
       });
     }
     return (
-      <div className="chart life-expectancy">
+      <div className="chart bar life-expectancy">
         <p>{this.state.quote}</p>
-
-        <h5>Life expectancy at birth (years) 2015 Data set (Both sexes averaged)</h5>
-        <BarChart
-          width={300}
-          height={300}
-          data={finalData}
-        >
-          <XAxis dataKey="xaxis" />
-          <YAxis />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Tooltip />
-          <Bar
-            dataKey="Afghanistan"
-            fill="black"
-          />
-          <Bar
-            dataKey="Switzerland"
-            fill="green"
-          />
-          <Bar
-            dataKey="Nigeria"
-            fill="purple"
-          />
-          <Bar
-            dataKey="Libya"
-            fill="orange"
-          />
-          <Bar
-            dataKey="Lesotho"
-            fill="brown"
-          />
-          <Bar
-            dataKey="Syrian Arab Republic"
-            fill="#C90016"
-          />
-          <Bar
-            dataKey="Viet Nam"
-            fill="red"
-          />
-          <Bar
-            dataKey="Malawi"
-            fill="pink"
-          />
-          <Bar
-            dataKey="United States of America"
-            fill="grey"
-          />
-          <Bar
-            dataKey="France"
-            fill="blue"
-          />
-          <Bar
-            dataKey="Uzbekistan"
-            fill="gold"
-          />
-          <Bar
-            dataKey="Saudi Arabia"
-            fill="maroon"
-          />
-          <Bar
-            dataKey="Madagascar"
-            fill="lime"
-          />
-        </BarChart>
+        <h6>Life expectancy at birth (years) 2015 Data set (Both sexes averaged)</h6>
+        <ResponsiveContainer width='100%' height={300}>
+          <BarChart
+            cx="50%" cy="50%" outerRadius="80%"
+            data={finalData}
+          >
+            <XAxis dataKey="xaxis" />
+            <YAxis />
+            <CartesianGrid strokeDasharray="3 3" />
+            <Tooltip />
+            <Bar
+              dataKey="Afghanistan"
+              fill="black"
+            />
+            <Bar
+              dataKey="Switzerland"
+              fill="green"
+            />
+            <Bar
+              dataKey="Nigeria"
+              fill="purple"
+            />
+            <Bar
+              dataKey="Libya"
+              fill="orange"
+            />
+            <Bar
+              dataKey="Lesotho"
+              fill="brown"
+            />
+            <Bar
+              dataKey="Syrian Arab Republic"
+              fill="#C90016"
+            />
+            <Bar
+              dataKey="Viet Nam"
+              fill="red"
+            />
+            <Bar
+              dataKey="Malawi"
+              fill="pink"
+            />
+            <Bar
+              dataKey="United States of America"
+              fill="grey"
+            />
+            <Bar
+              dataKey="France"
+              fill="blue"
+            />
+            <Bar
+              dataKey="Uzbekistan"
+              fill="gold"
+            />
+            <Bar
+              dataKey="Saudi Arabia"
+              fill="maroon"
+            />
+            <Bar
+              dataKey="Madagascar"
+              fill="lime"
+            />
+          </BarChart>
+        </ResponsiveContainer>
       </div>
     );
   }

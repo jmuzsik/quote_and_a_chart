@@ -15,7 +15,7 @@ import SexWorkersSyphilis from './poem-1-data/SexWorkersSyphilis';
 
 import Buttons from './Buttons';
 
-const arrayOfTitles = ["Mortality", "Drunkenness", "Children", "HIV/AIDS", "Sex offender", "Life", "Comfort", "Poverty", "Violence", "Disease"]
+const arrayOfTitles = ["Mortality", "Drunkenness", "Childhood", "HIV/AIDS", "Violence", "Life", "Suffering", "Poverty", "Pedophilia", "Disease"]
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +37,6 @@ class App extends Component {
   onPageChange(value) {
     const currentPage = this.state.currentPage + value
     this.changeTitle(currentPage)
-    console.log(currentPage)
     this.setState({ currentPage })
   }
 
@@ -47,6 +46,7 @@ class App extends Component {
   }
 
   renderPage(curPage) {
+    console.log(this.state.title)
     switch (curPage) {
       case 0:
         return <AdultMortalityProbability title={this.state.title} />
@@ -67,7 +67,7 @@ class App extends Component {
       case 8:
         return <SexualViolence title={this.state.title} />
       case 9:
-        return <AdultMortalityProbability title={this.state.title} />
+        return <SexWorkersSyphilis title={this.state.title} />
     }
   }
 

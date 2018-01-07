@@ -20,7 +20,7 @@ class AlcoholDeaths extends Component {
   }
 
   success (wikiData) {
-    let quote = wikiData.quote, data = []
+    let quote = `"${wikiData.quote}"`, data = []
     data = mapTable(filterTable(initialReformat(AlcoholConumptionDeaths)))
     this.setState({quote, data})
   }
@@ -46,10 +46,10 @@ class AlcoholDeaths extends Component {
           search
           multiColumnSearch
           pagination
-          tableStyle={{ width: '80%', position: 'relative', left: '10vw' }}
+          height="30vh"
           data={finalData}
         >
-          <TableHeaderColumn row="0" colSpan="4" dataAlign="center">
+          <TableHeaderColumn row="0" colSpan="2" dataAlign="center">
             Alcohol-attributable fractions, all-cause deaths (%) Both Sexes 2012
           </TableHeaderColumn>
           <TableHeaderColumn

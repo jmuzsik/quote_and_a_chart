@@ -4,16 +4,16 @@ import {
   PolarGrid,
   PolarAngleAxis,
   PolarRadiusAxis,
-  Tooltip
+  Tooltip,
+  ResponsiveContainer,
+  LabelList,
+  Label
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, filterTable, mapTable, initialReformat, filterBySex } from '../utils.js';
 import { WikiquoteApi, error } from '../WikiQuote.js'
 
 const AdultMortalityProbabilityData = require('../data/adult-mortality-region.json')
-
-
-
 
 class AdultMortalityProbability extends Component {
   constructor(props) {
@@ -29,10 +29,10 @@ class AdultMortalityProbability extends Component {
     WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
   }
 
-  success (wikiData) {
-    let quote = wikiData.quote, data = []
+  success(wikiData) {
+    let quote = `"${wikiData.quote}"`, data = []
     data = mapTable(filterTable(initialReformat(AdultMortalityProbabilityData)))
-    this.setState({quote, data})
+    this.setState({ quote, data })
   }
 
   render() {
@@ -58,22 +58,24 @@ class AdultMortalityProbability extends Component {
         <p>{this.state.quote}</p>
         <h6 className="title">Adult mortality rate (probability of dying between 15 and 60 years per 1000 population) - 2015
         </h6>
-        <RadarChart
-          width={300}
-          height={300}
-          data={formatData}
-        >
-          <PolarGrid />
-          <PolarAngleAxis dataKey="region" />
-          <PolarRadiusAxis />
-          <Tooltip />
-          <Radar
-            dataKey="value"
-            stroke="#8884d8"
-            fill="#910000"
-            fillOpacity={0.7}
-          />
-        </RadarChart>
+        <ResponsiveContainer width='100%' height={300}>
+          <RadarChart
+            cx="50%" cy="50%" outerRadius="80%"
+            data={formatData}
+          >
+            <PolarGrid gridType="circle" />
+            <PolarAngleAxis dataKey="region" />
+            <PolarRadiusAxis />
+            <Tooltip />
+            <Radar
+              name="Probability"
+              dataKey="value"
+              stroke="#4286f4"
+              fill="#4e5d75"
+              fillOpacity={0.7}
+            />
+          </RadarChart>
+        </ResponsiveContainer>
       </div >
     );
   }

@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
 import { WikiquoteApi, error } from '../WikiQuote.js'
@@ -20,7 +20,7 @@ class HIVKnowledge extends Component {
   }
 
   success(wikiData) {
-    let quote = wikiData.quote, data = []
+    let quote = `"${wikiData.quote}"`, data = []
     data = mapTable(filterTable(initialReformat(HIVKnowledgeData)))
     this.setState({ quote, data })
   }
@@ -52,74 +52,75 @@ class HIVKnowledge extends Component {
       }
     }
     return (
-      <div className="chart HIV">
+      <div className="chart bar HIV">
         <p>{this.state.quote}</p>
-        <h5>Knowlege about sexual transmission of AIDS (Average Both Sexes)</h5>
-        <LineChart
-          width={300}
-          height={300}
-          data={finalData}
-        >
-          <XAxis dataKey="year" />
-          <YAxis />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Tooltip />
-          <Line connectNulls={true} type="monotone" dataKey="Zambia" stroke="black" />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Bangladesh"
-            stroke="green"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Bolivia (Plurinational State of"
-            stroke="purple"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Cameroon"
-            stroke="orange"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Ghana"
-            stroke="brown"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Malawi"
-            stroke="#C90016"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Nepal"
-            stroke="red"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Zimbabwe"
-            stroke="maroon"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="United Republic of Tanzania"
-            stroke="grey"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Peru"
-            stroke="#6082B6"
-          />
-        </LineChart>
+        <h6>Knowlege about sexual transmission of AIDS (Average Both Sexes)</h6>
+        <ResponsiveContainer width='100%' height={300}>
+          <LineChart
+            cx="50%" cy="50%" outerRadius="80%"
+            data={finalData}
+          >
+            <XAxis dataKey="year" />
+            <YAxis />
+            <CartesianGrid strokeDasharray="3 3" />
+            <Tooltip />
+            <Line connectNulls={true} type="monotone" dataKey="Zambia" stroke="black" />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Bangladesh"
+              stroke="green"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Bolivia (Plurinational State of"
+              stroke="purple"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Cameroon"
+              stroke="orange"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Ghana"
+              stroke="brown"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Malawi"
+              stroke="#C90016"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Nepal"
+              stroke="red"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Zimbabwe"
+              stroke="maroon"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="United Republic of Tanzania"
+              stroke="grey"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Peru"
+              stroke="#6082B6"
+            />
+          </LineChart>
+        </ResponsiveContainer>
       </div>
     );
   }

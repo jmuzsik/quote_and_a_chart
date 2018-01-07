@@ -4,7 +4,8 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip
+  Tooltip,
+  ResponsiveContainer
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, mapTable, filterTable, initialReformat } from '../utils.js';
@@ -27,7 +28,7 @@ class OpenDefChart extends Component {
   }
 
   success(wikiData) {
-    let quote = wikiData.quote, data = []
+    let quote = `"${wikiData.quote}"`, data = []
     data = mapTable(filterTable(initialReformat(OpenDefData)))
     this.setState({ quote, data })
   }
@@ -53,104 +54,104 @@ class OpenDefChart extends Component {
     }
 
     return (
-      <div className="chart open-def">
+      <div className="chart bar open-def">
         <p>{this.state.quote}</p>
-
-        <h5 className='title'>{this.state.data.length > 0 && data['1990'][0].title}</h5>
-        <LineChart
-          width={300}
-          height={300}
-          data={finalData}
-        >
-          <XAxis dataKey="year" />
-          <YAxis />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Tooltip />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Colombia"
-            stroke="black"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Zimbabwe"
-            stroke="green"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Zambia"
-            stroke="purple"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Viet Nam"
-            stroke="orange"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="United Republic of Tanzania"
-            stroke="black"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Uganda"
-            stroke="brown"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Togo"
-            stroke="#C90016"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Sierra Leone"
-            stroke="red"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Senegal"
-            stroke="maroon"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Philippines"
-            stroke="grey"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Peru"
-            stroke="#6082B6"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Nepal"
-            stroke="#D4AF37"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Ghana"
-            stroke="#00FF00"
-          />
-          <Line
-            connectNulls={true}
-            type="monotone"
-            dataKey="Cameroon"
-            stroke="#5218FA"
-          />
-        </LineChart>
+        <h6 className='title'>{this.state.data.length > 0 && data['1990'][0].title}</h6>
+        <ResponsiveContainer width='100%' height={300}>
+          <LineChart
+            cx="50%" cy="50%" outerRadius="80%"
+            data={finalData}
+          >
+            <XAxis dataKey="year" />
+            <YAxis />
+            <CartesianGrid strokeDasharray="3 3" />
+            <Tooltip />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Colombia"
+              stroke="black"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Zimbabwe"
+              stroke="green"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Zambia"
+              stroke="purple"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Viet Nam"
+              stroke="orange"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="United Republic of Tanzania"
+              stroke="black"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Uganda"
+              stroke="brown"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Togo"
+              stroke="#C90016"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Sierra Leone"
+              stroke="red"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Senegal"
+              stroke="maroon"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Philippines"
+              stroke="grey"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Peru"
+              stroke="#6082B6"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Nepal"
+              stroke="#D4AF37"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Ghana"
+              stroke="#00FF00"
+            />
+            <Line
+              connectNulls={true}
+              type="monotone"
+              dataKey="Cameroon"
+              stroke="#5218FA"
+            />
+          </LineChart>
+        </ResponsiveContainer>
       </div>
     );
   }

@@ -1,25 +1,23 @@
 /*Do not allow the div to take up more or less then the entirety of the viewport*/
-#root > div {
+
+#root>div {
   text-align: center;
-  width:100vw;
+  width: 100vw;
   overflow: hidden;
+  height: 100vh;
 }
 
-/*hiding the labels next to the polar charts, tooltip gives needed info*/
-
-tspan {
-  display:none;
-}
 
 /*this is to select the text within the recharts to alter the default font*/
 
-div.chart.alcohol > div {
+div.chart.alcohol>div {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
-div.chart > div {
+div.chart>div {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
+
 
 /*button creation, use for left and right: ◀ and ▶, use http://css3buttongenerator.com*/
 
@@ -39,6 +37,8 @@ div.chart > div {
   margin: .5em;
   border: solid #1f628d .2em;
   text-decoration: none;
+  position: relative;
+  bottom: 10vh;
 }
 
 .btn:hover {
@@ -49,4 +49,212 @@ div.chart > div {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+
+
+/*so as to make each svg centered*/
+
+#root>div>div>div>svg {
+  position: relative;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+/*image takes up space of container, padding so text is not forced to edge*/
+
+.chart {
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: no-repeat center center fixed;
+  padding: 2em;
+}
+
+
+/*so text is not large when screen gets small*/
+
+@media screen and (max-width: 600px) {
+  div.chart>p,
+  div.chart>h6 {
+    font-size: .9em;
+    line-height: 1.5em;
+  }
+  .recharts-polar-angle-axis>g>g>text>tspan {
+    font-size: .7em;
+  }
+  table>thead>tr>th {
+    font-size: .8em;
+  }
+  .react-bs-table-pagination>div>div {
+    left: 20vh;
+    font-size: .6em;
+  }
+  p {
+    font-size: .8em;
+  }
+}
+
+
+/*iphone*/
+
+@media screen and (max-width: 400px) {
+  div.chart>p,
+  div.chart>h6 {
+    font-size: .8em;
+    line-height: 1.3em;
+  }
+
+  .react-bs-table-pagination>div>div {
+    left: 12vh;
+    font-size: .6em;
+  }
+  .react-bs-table.react-bs-table-bordered {
+    width: 50vw;
+    position: relative;
+    right: 2em;
+  }
+  .react-bs-table-bordered>.react-bs-container-body>table>tbody>tr>td {
+    font-size: .7em;
+  }
+  table>thead>tr>th {
+    font-size: .6em;
+  }
+  /* .buttons > button {
+    font-size: .6em;
+    right: 60vw;
+  } */
+  .col-xs-6.col-sm-6.col-md-6.col-lg-4 {
+    display: none;
+  }
+  p {
+    font-size: .6em;
+  }
+  li {
+    font-size: .6em;
+  }
+  tspan {
+    display: none;
+  }
+}
+
+
+/* first chart image with opacity alteration */
+
+.chart.a-mortality {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), url('https://cdn-images-1.medium.com/max/1600/1*4mcE3VEIe7TZazs40C_NCg.jpeg');
+}
+
+
+/* this is different then most as I am working with a table, a different library and css difficulty */
+
+.chart.alcohol>div {
+  width: 50%;
+  position: relative;
+  left: 25vw;
+}
+
+#root>div>div.chart.alcohol>div>div.react-bs-table.react-bs-table-bordered {
+  height: 10%;
+}
+
+.react-bs-table.react-bs-table-bordered {
+  height: 25vh;
+}
+
+.react-bs-container-body>table>tbody>tr {
+  font-size: .6em;
+  letter-spacing: .4em;
+}
+
+/*fixed div so this is useless*/
+
+#pageDropDown {
+  display: none;
+}
+
+/*the paginations default location is in the way*/
+
+.react-bs-table-pagination>div>div {
+  position: relative;
+  bottom: 27vh;
+  right: 50vw;
+}
+
+/*th are too large, take up too much space*/
+
+table>thead>tr>th {
+  font-size: .7em;
+  padding: 0;
+}
+
+/*margin taking up too much space for table header*/
+.react-bs-container-header.table-header-wrapper > table {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/*div blocking display of search bar*/
+
+.col-sm-6.col-md-6.col-lg-8 {
+  display: none;
+}
+
+
+/*search bar should take up full amount of space that it can*/
+
+.col-xs-6.col-sm-6.col-md-6.col-lg-4 {
+  width: 100%;
+}
+
+.chart.alcohol {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('https://farm4.static.flickr.com/3922/14450361545_1d8ba2fff1_b.jpg');
+  background-size: 100% 100%;
+}
+
+.chart.under-five {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('https://guardian.ng/wp-content/uploads/2016/03/Nigerian-School-Children-The-Trent.jpg');
+}
+
+.chart.HIV {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('http://www.un.org/News/dh/photos/large/2015/February/02-17-unicef-aids-sudan.jpg');
+}
+
+.chart.bar>div>div.recharts-wrapper>svg {
+  position: relative;
+  right: 2em;
+}
+
+.chart.partner-violence {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('http://www.un.org/News/dh/photos/large/2017/July/07-10-2017-UN062020.jpg');
+}
+
+.chart.life-expectancy {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('https://i.pinimg.com/originals/c0/a7/06/c0a7062a2cd6aa070eaec096bcfdae89.jpg');
+}
+
+/*opacity to bars in bar chart so they aren't so ugly to look at*/
+.recharts-wrapper > svg > g > g > g > g > path {
+  opacity: .5;
+}
+
+.chart.open-def {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('http://i.dailymail.co.uk/i/pix/2015/11/27/22/2EDCD1FA00000578-3336935-Toilets_donated_by_Unicef_and_World_Vision_stand_near_tents_at_a-a-4_1448663910701.jpg');
+}
+
+.chart.below-poverty-line {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('https://pbs.twimg.com/media/C2XMc81XAAAz8G3.jpg');
+}
+
+.chart.sexual-violence {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('http://www.un.org/News/dh/photos/large/2015/June/349701Rape_Victim.jpg');
+}
+
+.chart.syphilis {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url('https://www.unicef.org.hk/wp-content/uploads/2016/06/UNI45819_Med-Res.jpg');
 }

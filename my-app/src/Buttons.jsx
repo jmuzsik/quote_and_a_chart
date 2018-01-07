@@ -13,7 +13,6 @@ class Buttons extends Component {
   componentWillReceiveProps(nextProps) {
     let currentPage = nextProps.currentPage,
       disableButton = ""
-    console.log(currentPage)
     if (currentPage === 0) {
       disableButton = "left"
     }
