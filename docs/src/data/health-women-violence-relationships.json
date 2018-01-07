@@ -1,0 +1,844 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "GBDREGION",
+                   "display": "GBD Region"
+                 },
+                 {
+                   "label": "WHOINCOMEREGION",
+                   "display": "WHO Income Region"
+                 },
+                 {
+                   "label": "AGEGROUP",
+                   "display": "Age Group"
+                 },
+                 {
+                   "label": "SEX",
+                   "display": "Sex"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "15-19  years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "39.9 [35.8-44.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "20-24 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "43.7 [39.7-47.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "25-29 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "45.9 [41.9-49.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "30-34 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "42.6 [38.7-46.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "35-39 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "28.7 [17.8-39.7]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "40-44 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "29 [12.1-45.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "45-49 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "38.5 [34.4-42.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "60-64 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "16.1 [0-34.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "15-69  (total) years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "36.6 [32.7-40.5]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the African Region",
+                          "AGEGROUP": "65-69 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "38.1 [25.4-50.8]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "15-19  years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "30.6 [27-34.2]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "20-24 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "32.6 [29-36.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "25-29 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "33.1 [29.6-36.7]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "30-34 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "33.1 [29.5-36.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "35-39 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "32.1 [26.5-37.8]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "40-44 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "32.4 [25.8-39]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "45-49 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "31.9 [28.3-35.5]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "50-54 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "24.7 [13.4-36.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "55-59 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "23 [11.7-34.3]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "15-69  (total) years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "29.8 [25.8-33.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Americas",
+                          "AGEGROUP": "65-69 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "35.8 [21.4-50.3]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "15-19  years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "24.9 [16.1-33.7]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "20-24 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "31.9 [23.1-40.7]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "25-29 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "31 [22.9-39.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "30-34 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "31.1 [23.3-38.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "35-39 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "28.5 [10.8-46.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "40-44 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "36.4 [20-52.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "45-49 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "31.3 [22.1-40.5]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "50-54 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "34.5 [10.4-58.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "15-69  (total) years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "37 [30.9-43.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Eastern Mediterranean Region",
+                          "AGEGROUP": "65-69 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "22.9 [0-85.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the European Region",
+                          "AGEGROUP": "15-19  years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "24.6 [19.7-29.4]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the European Region",
+                          "AGEGROUP": "20-24 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "21 [14.8-27.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the European Region",
+                          "AGEGROUP": "25-29 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "26.1 [21.3-30.8]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the European Region",
+                          "AGEGROUP": "30-34 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "25.6 [21-30.3]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the European Region",
+                          "AGEGROUP": "35-39 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "26.2 [18.2-34.3]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the European Region",
+                          "AGEGROUP": "40-44 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "24.8 [15.4-34.2]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the European Region",
+                          "AGEGROUP": "45-49 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "25.6 [18.3-32.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the European Region",
+                          "AGEGROUP": "15-69  (total) years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "25.4 [20.9-30]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the South-East Asia Region",
+                          "AGEGROUP": "15-19  years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "43.1 [36.6-49.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the South-East Asia Region",
+                          "AGEGROUP": "20-24 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "40.7 [34.6-46.8]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the South-East Asia Region",
+                          "AGEGROUP": "25-29 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "40.5 [34.6-46.5]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the South-East Asia Region",
+                          "AGEGROUP": "30-34 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "37.5 [31.5-43.4]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the South-East Asia Region",
+                          "AGEGROUP": "35-39 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "63.2 [40.7-85.7]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the South-East Asia Region",
+                          "AGEGROUP": "40-44 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "65.2 [42.6-87.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the South-East Asia Region",
+                          "AGEGROUP": "45-49 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "33.7 [27.6-39.8]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the South-East Asia Region",
+                          "AGEGROUP": "15-69  (total) years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "37.7 [32.8-42.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "15-19  years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "19.7 [12.7-26.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "20-24 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "24.7 [19.6-29.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "25-29 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "25.3 [20-30.7]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "30-34 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "25.5 [20.4-30.5]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "35-39 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "27.1 [20.3-33.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "40-44 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "27 [17.8-36.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "45-49 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "25.5 [21-30.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "50-54 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "27.3 [18.1-36.5]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "15-69  (total) years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "24.6 [20.1-29]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "Low- and middle-income countries of the Western Pacific Region",
+                          "AGEGROUP": "65-69 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "13.4 [0.6-26.2]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "15-19  years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "16.6 [12-21.3]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "20-24 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "20.8 [17-24.5]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "25-29 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "21.2 [17.3-25.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "30-34 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "21.5 [17.7-25.4]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "35-39 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "21.6 [17.4-25.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "40-44 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "21.8 [10.7-32.8]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "45-49 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "18.7 [14.5-22.8]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "50-54 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "18.2 [2.6-33.7]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "55-59 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "10.4 [0-23]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "60-64 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "22.2 [11.6-32.7]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "15-69  (total) years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "23.2 [20.2-26.2]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "High-income countries for all regions",
+                          "AGEGROUP": "65-69 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "16.2 [11.4-20.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "15-19  years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "29.4 [26.8-32.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "20-24 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "31.6 [29.2-33.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "25-29 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "32.3 [30-34.6]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "30-34 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "31.1 [28.9-33.4]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "35-39 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "36.6 [30-43.2]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "40-44 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "37.8 [30.7-44.9]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "45-49 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "29.2 [26.9-31.5]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "50-54 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "25.5 [18.6-32.4]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "55-59 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "15.1 [6.1-24.1]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "60-64 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "19.6 [9.6-29.5]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "15-69  (total) years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "30 [27.8-32.2]"
+              },
+              {
+                "dims": {
+                          "WHOINCOMEREGION": "World",
+                          "AGEGROUP": "65-69 years",
+                          "GHO": "Intimate partner violence prevalence among ever partnered women (%)",
+                          "SEX": "Female",
+                          "YEAR": "2010"
+                        },
+                "Value": "22.2 [12.8-31.6]"
+              }
+      ]
+}
