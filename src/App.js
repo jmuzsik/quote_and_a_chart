@@ -13,8 +13,10 @@ import PopulationBelowPovertyLine from './poem-1-data/PopulationBelowPovertyLine
 import SexualViolence from './poem-1-data/SexualViolence';
 import SexWorkersSyphilis from './poem-1-data/SexWorkersSyphilis';
 
+//the two buttons at bottom of every page
 import Buttons from './Buttons';
 
+//this is what is searched in wikiquote for each corresponding page, chosen to the best of my ability, aiming to express the data with words, sometimes the choice is not ideal, but I grew tired of looking
 const arrayOfTitles = ["Mortality", "Drunkenness", "Childhood", "HIV/AIDS", "Violence", "Life", "Suffering", "Poverty", "Pedophilia", "Disease"]
 
 class App extends Component {
@@ -34,19 +36,21 @@ class App extends Component {
     this.setState({ title })
   }
 
+  //every time a button is pressed to go to next, previous page, this runs
   onPageChange(value) {
     const currentPage = this.state.currentPage + value
     this.changeTitle(currentPage)
     this.setState({ currentPage })
   }
 
+  //every time a page changes, the title to search for in wikiquote changes
   changeTitle(curPage) {
     const title = arrayOfTitles[curPage]
     this.setState({ title })
   }
 
+  //each page is a specific case, as in a numerical page that it is located
   renderPage(curPage) {
-    console.log(this.state.title)
     switch (curPage) {
       case 0:
         return <AdultMortalityProbability title={this.state.title} />

@@ -23,11 +23,13 @@ class AdultMortalityProbability extends Component {
     this.success = this.success.bind(this)
   }
 
+  //use success function so as to immidiately access the final data for set state
   componentDidMount() {
     WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
   }
 
   success(wikiData) {
+    //grab wikiquote data
     let quote = `"${wikiData.quote}"`, data = []
     data = mapTable(filterTable(initialReformat(AdultMortalityProbabilityData)))
     this.setState({ quote, data })
@@ -51,6 +53,7 @@ class AdultMortalityProbability extends Component {
         j++
       })
     }
+    //ResponsiveContainer is used so the charts repond to decrease/increase in screen size
     return (
       <div className='chart a-mortality'>
         <p>{this.state.quote}</p>

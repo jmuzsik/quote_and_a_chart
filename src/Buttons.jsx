@@ -10,9 +10,11 @@ class Buttons extends Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
+  //this allows one to access the props that are coming from a parent component, and do work with it prior to rendering the page
   componentWillReceiveProps(nextProps) {
     let currentPage = nextProps.currentPage,
       disableButton = ""
+    //if last page, disable right, if first page, disable left
     if (currentPage === 0) {
       disableButton = "left"
     }
@@ -21,23 +23,21 @@ class Buttons extends Component {
     }
     if (disableButton === "left") {
       this.setState({
-        currentPage,
         leftButtonDisable: true
       })
     } else if (disableButton === "right") {
       this.setState({
-        currentPage,
         rightButtonDisable: true
       })
     } else {
       this.setState({
         leftButtonDisable: false,
-        rightButtonDisable: false,
-        currentPage
+        rightButtonDisable: false
       })
     }
   }
 
+  //when button is clicked set value sent to parent component to either -1 to decrement or +1 to increment
   handleChange(e) {
     let value = 0
     if (e.target.value === "left") {

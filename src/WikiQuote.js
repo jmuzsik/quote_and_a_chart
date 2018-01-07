@@ -6,12 +6,8 @@ export const WikiquoteApi = (function () {
 
   var API_URL = "https://en.wikiquote.org/w/api.php";
 
-  /**
-   * Query based on "titles" parameter and return page id.
-   * If multiple page ids are returned, choose the first one.
-   * Query includes "redirects" option to automatically traverse redirects.
-   * All words will be capitalized as this generally yields more consistent results.
-   */
+  //query the title specified
+
   wqa.queryTitles = function (titles, success, error) {
     window.$.ajax({
       url: API_URL,
@@ -27,7 +23,7 @@ export const WikiquoteApi = (function () {
         var pageId = -1;
         for (var p in pages) {
           var page = pages[p];
-          // api can return invalid recrods, these are marked as "missing"
+          // api can return invalid records, these are marked as "missing"
           if (!("missing" in page)) {
             pageId = page.pageid;
             break;
@@ -85,7 +81,7 @@ export const WikiquoteApi = (function () {
     });
   };
 
-  /**
+  /*
    * Get all quotes for a given section.  Most sections will be of the format:
    * <h3> title </h3>
    * <ul>
@@ -133,19 +129,17 @@ export const WikiquoteApi = (function () {
             quoteArray.push(window.$(this).html());
           }
         });
+
+        //grab valid quotes, not quotes that are very short or very long.
         var filteredQuotes = []
-        quoteArray = quoteArray.sort(function (a, b) {
-          return b.length - a.length;
-        });
+
         filteredQuotes = quoteArray.filter((quote) => {
           if (quote.length < 450) {
-            if(quote.length > 10) {
-              console.log(quote)
+            if (quote.length > 10) {
               return quote
             }
           }
         })
-        console.log(quoteArray, filteredQuotes)
         success({ titles: result.parse.title, quotes: filteredQuotes });
       },
       error: function (xhr, result, status) {

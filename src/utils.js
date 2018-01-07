@@ -45,7 +45,7 @@ export const filterAll = data => {
   data.map(row => {
     //if title exists already then add the row to correlate with the title
     if (filtered[row.title]) filtered[row.title].push(row);
-    //create a new array for row and place first instance into the it
+    //create a new array for row and place first instance into it
     else {
       filtered[row.title] = [];
       filtered[row.title].push(row);
@@ -79,31 +79,6 @@ export const filterAll = data => {
   //should return an array that contains a title as a key, an array of objects specifying years arrays as the value. Each of these arrays contains all of the row related to the year.
   return secondFilter;
 };
-
-//I have no idea what the point of this is, as the fact is that it does not appear to be used anywhere.
-// export const flatten = data => {
-//   const renderCustom = (cell, row, extra) => {
-//     const value = _.get(row, extra.path);
-//     return <div>{value}</div>;
-//   };
-
-//   const columns = [
-//     { path: 'id', title: 'ID', isKey: true },
-//     { path: 'animal.cat', title: 'Cat' }
-//   ];
-
-//   const tableColumn = _.map(columns, column => (
-//     <TableHeaderColumn
-//       dataField={column.path}
-//       dataFormat={renderCustom}
-//       formatExtraData={column}
-//       isKey={column.isKey}
-//       key={column.path}
-//     >
-//       {column.title}
-//     </TableHeaderColumn>
-//   ));
-// };
 
 export const separateDataByYears = (data, title) => {
   data = data[title]
@@ -229,7 +204,7 @@ export const initialReformat = (data) => {
 }
 
 export const filterByAgeGroup = (data, ageGroup) => {
-  return data.filter( row => {
-    if(row.agegroup === ageGroup) return row;
+  return data.filter(row => {
+    if (row.agegroup === ageGroup) return row;
   })
 }

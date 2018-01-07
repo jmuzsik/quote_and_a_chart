@@ -30,7 +30,7 @@ class LifeExpectancy extends Component {
       finalData = [],
       i = 0;
     if (this.state.data.length > 0) {
-      //format data so that data can be utilised by year... [title: {year: [obj_with_data, ...], ...}, ...]
+      //format data so that data can be utilised by year... [title: {year: [obj_with_data, ...], another_year: [...], ...}, ...]
       data = filterAll(dataFunction(this.state.data));
       data = filterBySex('Both sexes', data, 'Life expectancy at birth (years)', 2015)
       //for a bar the table must be used to compare data based upon a datakey for the x-axis, a specific dataKey for each country works
