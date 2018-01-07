@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  padding: 0;
+	padding: 0;
+	background:rgba(170,170,170,0.8);
 }
 
 /*If I know the app will have plenty of text, I prefer to do a reset, copied from... https://www.cssfontstack.com/Futura */

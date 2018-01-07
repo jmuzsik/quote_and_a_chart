@@ -68,6 +68,8 @@ class App extends Component {
         return <SexualViolence title={this.state.title} />
       case 9:
         return <SexWorkersSyphilis title={this.state.title} />
+      default:
+        return <HIVKnowledge title={this.state.title} />
     }
   }
 

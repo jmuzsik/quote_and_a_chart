@@ -5,9 +5,7 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   Tooltip,
-  ResponsiveContainer,
-  LabelList,
-  Label
+  ResponsiveContainer
 } from 'recharts';
 import React, { Component } from 'react';
 import { dataFunction, filterAll, filterTable, mapTable, initialReformat, filterBySex } from '../utils.js';
