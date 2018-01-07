@@ -1,4 +1,4 @@
-/*Do not allow the div to take up more or less then the entirety of the viewport*/
+Do not allow the div to take up more or less then the entirety of the viewport
 
 #root>div {
   text-align: center;
