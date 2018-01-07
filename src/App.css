@@ -1,4 +1,64 @@
-Do not allow the div to take up more or less then the entirety of the viewport
+#root {
+  margin: 0;
+	padding: 0;
+	background:rgba(170,170,170,0.8);
+}
+
+/*If I know the app will have plenty of text, I prefer to do a reset, copied from... https://www.cssfontstack.com/Futura */
+
+h1 {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+h6 {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: small-caps;
+	text-decoration: underline;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+blockquote {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+
+/*Do not allow the div to take up more or less then the entirety of the viewport*/
 
 #root>div {
   text-align: center;
