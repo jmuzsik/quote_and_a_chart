@@ -1,4 +1,4 @@
-import 'jquery/src/jquery';
+import * as $ from 'jquery';
 
 export const WikiquoteApi = (function () {
 
@@ -9,7 +9,7 @@ export const WikiquoteApi = (function () {
   //query the title specified
 
   wqa.queryTitles = function (titles, success, error) {
-    window.$.ajax({
+    $.ajax({
       url: API_URL,
       dataType: "jsonp",
       data: {
@@ -50,7 +50,7 @@ export const WikiquoteApi = (function () {
    * in case there is a redirect.
    */
   wqa.getSectionsForPage = function (pageId, success, error) {
-    window.$.ajax({
+    $.ajax({
       url: API_URL,
       dataType: "jsonp",
       data: {
@@ -102,7 +102,7 @@ export const WikiquoteApi = (function () {
    * in case there is a redirect.
    */
   wqa.getQuotesForSection = function (pageId, sectionIndex, success, error) {
-    window.$.ajax({
+    $.ajax({
       url: API_URL,
       dataType: "jsonp",
       data: {
@@ -117,16 +117,16 @@ export const WikiquoteApi = (function () {
         var quotes = result.parse.text["*"];
         var quoteArray = []
         // Find top level <li> only
-        var $lis = window.$(quotes).find('li:not(li li)');
+        var $lis = $(quotes).find('li:not(li li)');
         $lis.each(function () {
           // Remove all children that aren't <b>
-          window.$(this).children().remove(':not(b)');
-          var $bolds = window.$(this).find('b');
+          $(this).children().remove(':not(b)');
+          var $bolds = $(this).find('b');
           // If the section has bold text, use it.  Otherwise pull the plain text.
           if ($bolds.length > 0) {
             quoteArray.push($bolds.html());
           } else {
-            quoteArray.push(window.$(this).html());
+            quoteArray.push($(this).html());
           }
         });
 
@@ -135,7 +135,7 @@ export const WikiquoteApi = (function () {
 
         filteredQuotes = quoteArray.filter((quote) => {
           if (quote.length < 450) {
-            if (quote.length > 10) {
+            if (quote.length > 50) {
               return quote
             }
           }

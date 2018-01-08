@@ -50,7 +50,7 @@ class SexWorkersSyphilis extends Component {
       <div className="chart bar syphilis">
         <p>{this.state.quote}</p>
 
-        <h6>Proportion of young women and men aged 18-29 years who experienced sexual violence by age 18 (%) - Most recent data (about 2013)</h6>
+        <h6>Sex workers with active syphilis (%) - Most Recent Year Data</h6>
         <ResponsiveContainer width='100%' height={300}>
           <BarChart
             cx="50%" cy="50%" outerRadius="80%"

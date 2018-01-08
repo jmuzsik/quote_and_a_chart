@@ -38,9 +38,9 @@ class HIVKnowledge extends Component {
         'Knowlege about sexual transmission of AIDS'
         ];
       //set each country as a 'dataKey' with value what is shown on the chart.
-      for (var key in data) {
-        finalData.push({ year: key });
-        data[key].forEach(obj => {
+      for (var year in data) {
+        finalData.push({ year });
+        data[year].forEach(obj => {
           //do this in case there is a male and female to average the data between gender
           if (parseFloat(finalData[i][obj.country]) > 0) {
             finalData[i][obj.country] = (finalData[i][obj.country] + +obj.value) / 2
@@ -74,7 +74,7 @@ class HIVKnowledge extends Component {
             <Line
               connectNulls={true}
               type="monotone"
-              dataKey="Bolivia (Plurinational State of"
+              dataKey="Bolivia (Plurinational State of)"
               stroke="purple"
             />
             <Line
