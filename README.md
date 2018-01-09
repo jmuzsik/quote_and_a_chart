@@ -9,4 +9,4 @@
 
 Hope it gives you a few moments of enjoyment, and something worth remembering.
 
-[https://medium.com/@muzsik33/how-to-create-and-deploy-a-create-react-app-with-recharts-the-wikiquotes-api-and-a-data-set-1f3a90fccb2d]
+[Medium Article About It](https://medium.com/@muzsik33/how-to-create-and-deploy-a-create-react-app-with-recharts-the-wikiquotes-api-and-a-data-set-1f3a90fccb2d)
