@@ -1,46 +1,45 @@
-import * as $ from 'jquery';
+import * as $ from 'jquery'
 
-export const WikiquoteApi = (function () {
+export const WikiquoteApi = (function() {
+  var wqa = {}
 
-  var wqa = {};
-
-  var API_URL = "https://en.wikiquote.org/w/api.php";
+  var API_URL = 'https://en.wikiquote.org/w/api.php'
 
   //query the title specified
 
-  wqa.queryTitles = function (titles, success, error) {
+  wqa.queryTitles = function(titles, success, error) {
     $.ajax({
       url: API_URL,
-      dataType: "jsonp",
+      dataType: 'jsonp',
       data: {
-        format: "json",
-        action: "query",
-        redirects: "",
+        format: 'json',
+        action: 'query',
+        redirects: '',
         titles: titles
       },
-      success: function (result, status) {
-        var pages = result.query.pages;
-        var pageId = -1;
+      success: function(result, status) {
+        var pages = result.query.pages
+        var pageId = -1
         for (var p in pages) {
-          var page = pages[p];
+          var page = pages[p]
           // api can return invalid records, these are marked as "missing"
-          if (!("missing" in page)) {
-            pageId = page.pageid;
-            break;
+          if (!('missing' in page)) {
+            pageId = page.pageid
+            break
           }
         }
         if (pageId > 0) {
-          success(pageId);
+          success(pageId)
         } else {
-          error("No results");
+          error('No results')
         }
       },
 
-      error: function (xhr, result, status) {
-        error("Error processing your query");
+      error: function(xhr, result, status) {
+        error('Error processing your query')
       }
-    });
-  };
+    })
+  }
 
   /**
    * Get the sections for a given page.
@@ -49,37 +48,37 @@ export const WikiquoteApi = (function () {
    * If no 1.x sections exists, returns section 1. Returns the titles that were used
    * in case there is a redirect.
    */
-  wqa.getSectionsForPage = function (pageId, success, error) {
+  wqa.getSectionsForPage = function(pageId, success, error) {
     $.ajax({
       url: API_URL,
-      dataType: "jsonp",
+      dataType: 'jsonp',
       data: {
-        format: "json",
-        action: "parse",
-        prop: "sections",
+        format: 'json',
+        action: 'parse',
+        prop: 'sections',
         pageid: pageId
       },
 
-      success: function (result, status) {
-        var sectionArray = [];
-        var sections = result.parse.sections;
+      success: function(result, status) {
+        var sectionArray = []
+        var sections = result.parse.sections
         for (var s in sections) {
-          var splitNum = sections[s].number.split('.');
-          if (splitNum.length > 1 && splitNum[0] === "1") {
-            sectionArray.push(sections[s].index);
+          var splitNum = sections[s].number.split('.')
+          if (splitNum.length > 1 && splitNum[0] === '1') {
+            sectionArray.push(sections[s].index)
           }
         }
         // Use section 1 if there are no "1.x" sections
         if (sectionArray.length === 0) {
-          sectionArray.push("1");
+          sectionArray.push('1')
         }
-        success({ titles: result.parse.title, sections: sectionArray });
+        success({ titles: result.parse.title, sections: sectionArray })
       },
-      error: function (xhr, result, status) {
-        error("Error getting sections");
+      error: function(xhr, result, status) {
+        error('Error getting sections')
       }
-    });
-  };
+    })
+  }
 
   /*
    * Get all quotes for a given section.  Most sections will be of the format:
@@ -101,52 +100,54 @@ export const WikiquoteApi = (function () {
    * Otherwise the entire text is returned.  Returns the titles that were used
    * in case there is a redirect.
    */
-  wqa.getQuotesForSection = function (pageId, sectionIndex, success, error) {
+  wqa.getQuotesForSection = function(pageId, sectionIndex, success, error) {
     $.ajax({
       url: API_URL,
-      dataType: "jsonp",
+      dataType: 'jsonp',
       data: {
-        format: "json",
-        action: "parse",
-        noimages: "",
+        format: 'json',
+        action: 'parse',
+        noimages: '',
         pageid: pageId,
         section: sectionIndex
       },
 
-      success: function (result, status) {
-        var quotes = result.parse.text["*"];
+      success: function(result, status) {
+        var quotes = result.parse.text['*']
         var quoteArray = []
         // Find top level <li> only
-        var $lis = $(quotes).find('li:not(li li)');
-        $lis.each(function () {
+        var $lis = $(quotes).find('li:not(li li)')
+        $lis.each(function() {
           // Remove all children that aren't <b>
-          $(this).children().remove(':not(b)');
-          var $bolds = $(this).find('b');
+          $(this)
+            .children()
+            .remove(':not(b)')
+          var $bolds = $(this).find('b')
           // If the section has bold text, use it.  Otherwise pull the plain text.
           if ($bolds.length > 0) {
-            quoteArray.push($bolds.html());
+            quoteArray.push($bolds.html())
           } else {
-            quoteArray.push($(this).html());
+            quoteArray.push($(this).html())
           }
-        });
+        })
 
         //grab valid quotes, not quotes that are very short or very long.
         var filteredQuotes = []
 
-        filteredQuotes = quoteArray.filter((quote) => {
+        filteredQuotes = quoteArray.filter(quote => {
           if (quote.length < 450) {
             if (quote.length > 50) {
               return quote
             }
           }
         })
-        success({ titles: result.parse.title, quotes: filteredQuotes });
+        success({ titles: result.parse.title, quotes: filteredQuotes })
       },
-      error: function (xhr, result, status) {
-        error("Error getting quotes");
+      error: function(xhr, result, status) {
+        error('Error getting quotes')
       }
-    });
-  };
+    })
+  }
 
   /**
    * Get a random quote for the given title search.
@@ -155,30 +156,40 @@ export const WikiquoteApi = (function () {
    * quote from that section.  Returns the titles that were used in case there
    * is a redirect.
    */
-  wqa.getRandomQuote = function (titles, success, error) {
+  wqa.getRandomQuote = function(titles, success, error) {
+    var errorFunction = function(msg) {
+      error(msg)
+    }
+    var chooseQuote = function(quotes) {
+      var randomNum = Math.floor(Math.random() * quotes.quotes.length)
+      success({ titles: quotes.titles, quote: quotes.quotes[randomNum] })
+    }
 
-    var errorFunction = function (msg) {
-      error(msg);
-    };
-    var chooseQuote = function (quotes) {
-      var randomNum = Math.floor(Math.random() * quotes.quotes.length);
-      success({ titles: quotes.titles, quote: quotes.quotes[randomNum] });
-    };
+    var getQuotes = function(pageId, sections) {
+      var randomNum = Math.floor(Math.random() * sections.sections.length)
+      wqa.getQuotesForSection(
+        pageId,
+        sections.sections[randomNum],
+        chooseQuote,
+        errorFunction
+      )
+    }
 
-    var getQuotes = function (pageId, sections) {
-      var randomNum = Math.floor(Math.random() * sections.sections.length);
-      wqa.getQuotesForSection(pageId, sections.sections[randomNum], chooseQuote, errorFunction);
-    };
+    var getSections = function(pageId) {
+      wqa.getSectionsForPage(
+        pageId,
+        function(sections) {
+          getQuotes(pageId, sections)
+        },
+        errorFunction
+      )
+    }
 
-    var getSections = function (pageId) {
-      wqa.getSectionsForPage(pageId, function (sections) { getQuotes(pageId, sections); }, errorFunction);
-    };
+    wqa.queryTitles(titles, getSections, errorFunction)
+  }
+  return wqa
+})()
 
-    wqa.queryTitles(titles, getSections, errorFunction);
-  };
-  return wqa;
-}());
-
-export const error = (err) => {
+export const error = err => {
   console.error(err)
 }

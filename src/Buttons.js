@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Buttons extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       leftButtonDisable: true,
       rightButtonDisable: false
-    };
+    }
     this.handleChange = this.handleChange.bind(this)
   }
 
@@ -17,8 +17,7 @@ class Buttons extends Component {
       this.setState({
         leftButtonDisable: true
       })
-    }
-    else if (currentPage === 9) {
+    } else if (currentPage === 9) {
       this.setState({
         rightButtonDisable: true
       })
@@ -33,7 +32,7 @@ class Buttons extends Component {
   //when button is clicked set value sent to parent component to either -1 to decrement or +1 to increment
   handleChange(e) {
     let value = 0
-    if (e.target.value === "left") {
+    if (e.target.value === 'left') {
       value--
       this.props.onPageChange(value)
     } else {
@@ -45,11 +44,25 @@ class Buttons extends Component {
   render() {
     return (
       <div className="buttons">
-        <button className="btn" value="left" disabled={this.state.leftButtonDisable} onClick={this.handleChange}>◀</button>
-        <button className="btn" value="right" disabled={this.state.rightButtonDisable} onClick={this.handleChange}>▶</button>
+        <button
+          className="btn"
+          value="left"
+          disabled={this.state.leftButtonDisable}
+          onClick={this.handleChange}
+        >
+          ◀
+        </button>
+        <button
+          className="btn"
+          value="right"
+          disabled={this.state.rightButtonDisable}
+          onClick={this.handleChange}
+        >
+          ▶
+        </button>
       </div>
-    );
+    )
   }
 }
 
-export default Buttons;
+export default Buttons

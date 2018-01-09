@@ -6,29 +6,37 @@ import {
   PolarRadiusAxis,
   Tooltip,
   ResponsiveContainer
-} from 'recharts';
-import React, { Component } from 'react';
-import { dataFunction, filterAll, filterTable, mapTable, initialReformat, filterBySex } from '../utils.js';
+} from 'recharts'
+import React, { Component } from 'react'
+import {
+  dataFunction,
+  filterAll,
+  filterTable,
+  mapTable,
+  initialReformat,
+  filterBySex
+} from '../utils.js'
 import { WikiquoteApi, error } from '../WikiQuote.js'
 
 const AdultMortalityProbabilityData = require('../data/adult-mortality-region.json')
 
 class AdultMortalityProbability extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       data: [],
-      quote: ""
-    };
+      quote: ''
+    }
   }
 
   //use success function so as to immidiately access the final data for set state
   componentDidMount() {
-    let quote = "", data = []
-    const success = (wikiData) => {
+    let quote = '',
+      data = []
+    const success = wikiData => {
       quote = `"${wikiData.quote}"`
     }
-    WikiquoteApi.getRandomQuote("Mortality", success, error)
+    WikiquoteApi.getRandomQuote('Mortality', success, error)
     data = mapTable(filterTable(initialReformat(AdultMortalityProbabilityData)))
     const checkQuoteLength = () => {
       if (quote.length > 0) {
@@ -47,9 +55,14 @@ class AdultMortalityProbability extends Component {
       j = 0
     if (this.state.data.length > 0) {
       //separates data based upon year.. as so: [some_title: {some_year: [objs_of_data],...},...]
-      data = filterAll(dataFunction(this.state.data));
+      data = filterAll(dataFunction(this.state.data))
       //averages data from all years based upon region, {region1: data1, ...}
-      dataFilter = filterBySex('Both sexes', data, 'Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)', 2015)
+      dataFilter = filterBySex(
+        'Both sexes',
+        data,
+        'Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)',
+        2015
+      )
       //format data to be read by recharts)
       dataFilter.forEach(row => {
         formatData[j] = {}
@@ -60,15 +73,14 @@ class AdultMortalityProbability extends Component {
     }
     //ResponsiveContainer is used so the charts repond to decrease/increase in screen size
     return (
-      <div className='chart a-mortality'>
+      <div className="chart a-mortality">
         <p>{this.state.quote}</p>
-        <h6 className="title">Adult mortality rate (probability of dying between 15 and 60 years per 1000 population) - 2015
+        <h6 className="title">
+          Adult mortality rate (probability of dying between 15 and 60 years per
+          1000 population) - 2015
         </h6>
-        <ResponsiveContainer width='100%' height={300}>
-          <RadarChart
-            cx="50%" cy="50%" outerRadius="80%"
-            data={formatData}
-          >
+        <ResponsiveContainer width="100%" height={300}>
+          <RadarChart cx="50%" cy="50%" outerRadius="80%" data={formatData}>
             <PolarGrid gridType="circle" />
             <PolarAngleAxis dataKey="region" />
             <PolarRadiusAxis />
@@ -82,9 +94,9 @@ class AdultMortalityProbability extends Component {
             />
           </RadarChart>
         </ResponsiveContainer>
-      </div >
-    );
+      </div>
+    )
   }
 }
 
-export default AdultMortalityProbability;
+export default AdultMortalityProbability
