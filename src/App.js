@@ -16,72 +16,55 @@ import SexWorkersSyphilis from './poem-1-data/SexWorkersSyphilis';
 //the two buttons at bottom of every page
 import Buttons from './Buttons';
 
-//this is what is searched in wikiquote for each corresponding page, chosen to the best of my ability, aiming to express the data with words, sometimes the choice is not ideal, but I grew tired of looking
-const arrayOfTitles = ["Mortality", "Drunkenness", "Childhood", "HIV/AIDS", "Violence", "Life", "Suffering", "Poverty", "Pedophilia", "Disease"]
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "",
       currentPage: 0
     };
     this.onPageChange = this.onPageChange.bind(this)
-    this.changeTitle = this.changeTitle.bind(this)
     this.renderPage = this.renderPage.bind(this)
-  }
-
-  componentDidMount() {
-    const title = arrayOfTitles[this.state.currentPage]
-    this.setState({ title })
   }
 
   //every time a button is pressed to go to next, previous page, this runs
   onPageChange(value) {
     const currentPage = this.state.currentPage + value
-    this.changeTitle(currentPage)
     this.setState({ currentPage })
-  }
-
-  //every time a page changes, the title to search for in wikiquote changes
-  changeTitle(curPage) {
-    const title = arrayOfTitles[curPage]
-    this.setState({ title })
   }
 
   //each page is a specific case, as in a numerical page that it is located
   renderPage(curPage) {
     switch (curPage) {
       case 0:
-        return <AdultMortalityProbability title={this.state.title} />
+        return <AdultMortalityProbability />
       case 1:
-        return <AlcoholDeaths title={this.state.title} />
+        return <AlcoholDeaths />
       case 2:
-        return <MortalityBeforeFiveChart title={this.state.title} />
+        return <MortalityBeforeFiveChart />
       case 3:
-        return <HIVKnowledge title={this.state.title} />
+        return <HIVKnowledge />
       case 4:
-        return <IntimatePartnerViolence title={this.state.title} />
+        return <IntimatePartnerViolence />
       case 5:
-        return <LifeExpectancy title={this.state.title} />
+        return <LifeExpectancy />
       case 6:
-        return <OpenDefChart title={this.state.title} />
+        return <OpenDefChart />
       case 7:
-        return <PopulationBelowPovertyLine title={this.state.title} />
+        return <PopulationBelowPovertyLine />
       case 8:
-        return <SexualViolence title={this.state.title} />
+        return <SexualViolence />
       case 9:
-        return <SexWorkersSyphilis title={this.state.title} />
+        return <SexWorkersSyphilis />
       default:
-        return <HIVKnowledge title={this.state.title} />
+        return <HIVKnowledge />
     }
   }
 
   render() {
     return (
       <div className="App">
-        {this.state.title.length && this.renderPage(this.state.currentPage)}
-        {this.state.title.length && <Buttons currentPage={this.state.currentPage} onPageChange={this.onPageChange} />}
+        {this.renderPage(this.state.currentPage)}
+        <Buttons currentPage={this.state.currentPage} onPageChange={this.onPageChange} />
       </div>
     );
   }

@@ -20,63 +20,69 @@ class MortalityBeforeFiveChart extends Component {
       data: [],
       quote: ""
     };
-    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
-  }
-
-  success(wikiData) {
-    let quote = `"${wikiData.quote}"`, data = []
+    let quote = "", data = []
+    const success = (wikiData) => {
+      quote = `"${wikiData.quote}"`
+    }
+    WikiquoteApi.getRandomQuote("Childhood", success, error)
     data = mapTable(filterTable(initialReformat(BeforeFiveMortality)))
-    this.setState({ quote, data })
-  }
-
-  render() {
-    let data = [],
-      dataFilter = [],
-      formatData = [],
-      j = 0
-    if (this.state.data.length > 0) {
-      //separates data based upon year.. as so: [some_title: {some_year: [objs_of_data],...},...]
-      data = filterAll(dataFunction(this.state.data));
-      //averages data from all years based upon region, {region1: data1, ...}
-      dataFilter = averageDataByYear(separateDataByYears(data, 'Under-five mortality rate (probability of dying by age 5 per 1000 live births)'))
-      //format data to be read by recharts
-      for (var key in dataFilter) {
-        formatData[j] = {}
-        formatData[j].region = key
-        formatData[j].value = parseInt(dataFilter[key], 10)
-        j++
+    const checkQuoteLength = () => {
+      if (quote.length > 0) {
+        this.setState({ quote, data })
+      } else {
+        setTimeout(checkQuoteLength, 100)
       }
     }
-    return (
-      <div className="chart under-five">
-        <p>{this.state.quote}</p>
-        <h6 className="title">Under-five mortality rate (probability of dying by age 5 per 1000 live births)
-        </h6>
-        <ResponsiveContainer width='100%' height={300}>
-          <RadarChart
-            cx="50%" cy="50%" outerRadius="80%"
-            data={formatData}
-          >
-            <PolarGrid />
-            <PolarAngleAxis dataKey="region" />
-            <PolarRadiusAxis />
-            <Tooltip />
-            <Radar
-              name="probability"
-              dataKey="value"
-              stroke="#8884d8"
-              fill="#160e68"
-              fillOpacity={0.6}
-            />
-          </RadarChart>
-        </ResponsiveContainer>
-      </div>
-    );
+    checkQuoteLength()
   }
-}
 
-export default MortalityBeforeFiveChart;
+    render() {
+      let data = [],
+        dataFilter = [],
+        formatData = [],
+        j = 0
+      if (this.state.data.length > 0) {
+        //separates data based upon year.. as so: [some_title: {some_year: [objs_of_data],...},...]
+        data = filterAll(dataFunction(this.state.data));
+        //averages data from all years based upon region, {region1: data1, ...}
+        dataFilter = averageDataByYear(separateDataByYears(data, 'Under-five mortality rate (probability of dying by age 5 per 1000 live births)'))
+        //format data to be read by recharts
+        for (var key in dataFilter) {
+          formatData[j] = {}
+          formatData[j].region = key
+          formatData[j].value = parseInt(dataFilter[key], 10)
+          j++
+        }
+      }
+      return (
+        <div className="chart under-five">
+          <p>{this.state.quote}</p>
+          <h6 className="title">Under-five mortality rate (probability of dying by age 5 per 1000 live births)
+        </h6>
+          <ResponsiveContainer width='100%' height={300}>
+            <RadarChart
+              cx="50%" cy="50%" outerRadius="80%"
+              data={formatData}
+            >
+              <PolarGrid />
+              <PolarAngleAxis dataKey="region" />
+              <PolarRadiusAxis />
+              <Tooltip />
+              <Radar
+                name="probability"
+                dataKey="value"
+                stroke="#8884d8"
+                fill="#160e68"
+                fillOpacity={0.6}
+              />
+            </RadarChart>
+          </ResponsiveContainer>
+        </div>
+      );
+    }
+  }
+
+  export default MortalityBeforeFiveChart;

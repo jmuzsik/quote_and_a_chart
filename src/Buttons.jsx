@@ -12,20 +12,13 @@ class Buttons extends Component {
 
   //this allows one to access the props that are coming from a parent component, and do work with it prior to rendering the page
   componentWillReceiveProps(nextProps) {
-    let currentPage = nextProps.currentPage,
-      disableButton = ""
-    //if last page, disable right, if first page, disable left
+    let currentPage = nextProps.currentPage
     if (currentPage === 0) {
-      disableButton = "left"
-    }
-    if (currentPage === 9) {
-      disableButton = "right"
-    }
-    if (disableButton === "left") {
       this.setState({
         leftButtonDisable: true
       })
-    } else if (disableButton === "right") {
+    }
+    else if (currentPage === 9) {
       this.setState({
         rightButtonDisable: true
       })

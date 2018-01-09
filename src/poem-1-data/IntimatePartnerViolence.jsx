@@ -20,60 +20,66 @@ class IntimatePartnerViolence extends Component {
       data: [],
       quote: ""
     };
-    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
-  }
-
-  success(wikiData) {
-    let quote = `"${wikiData.quote}"`, data = []
-    data = mapTable(filterTable(initialReformat(PartnerViolenceData)))
-    this.setState({ quote, data })
-  }
-
-  render() {
-    let data = [],
-      formatData = []
-    if (this.state.data.length > 0) {
-      //separates data based upon year.. as so: [some_title: {some_year: [objs_of_data],...},...]
-      data = filterAll(dataFunction(this.state.data));
-      data = data['Intimate partner violence prevalence among ever partnered women (%)'][2010];
-      formatData = filterByAgeGroup(data, '15-69  (total) years')
-      formatData.map(row => {
-        row.value = parseFloat(row.value)
-      })
-      //averages data from all years based upon region, {region1: data1, ...}
-      //format data to be read by react bootstrap tables
+    let quote = "", data = []
+    const success = (wikiData) => {
+      quote = `"${wikiData.quote}"`
     }
-    return (
-      <div className="chart partner-violence">
-        <p>{this.state.quote}</p>
-        <h6 className="title">
-          Intimate partner violence prevalence among ever partnered women (%) - 15-69  (total) years averaged
-        </h6>
-        <ResponsiveContainer width='100%' height={300}>
-          <RadarChart
-            cx="50%" cy="50%" outerRadius="80%"
-            data={formatData}
-          >
-            <PolarGrid />
-            <PolarAngleAxis dataKey="region" />
-            <PolarRadiusAxis />
-            <Tooltip />
-            <Radar
-              name="Percent"
-              dataKey="value"
-              stroke="#8884d8"
-              fill="#8884d8"
-              fillOpacity={0.6}
-            />
-          </RadarChart>
-        </ResponsiveContainer>
-      </div>
-    );
+    WikiquoteApi.getRandomQuote("Violence", success, error)
+    data = mapTable(filterTable(initialReformat(PartnerViolenceData)))
+    const checkQuoteLength = () => {
+      if (quote.length > 0) {
+        this.setState({ quote, data })
+      } else {
+        setTimeout(checkQuoteLength, 100)
+      }
+    }
+    checkQuoteLength()
   }
-}
 
-export default IntimatePartnerViolence;
+    render() {
+      let data = [],
+        formatData = []
+      if (this.state.data.length > 0) {
+        //separates data based upon year.. as so: [some_title: {some_year: [objs_of_data],...},...]
+        data = filterAll(dataFunction(this.state.data));
+        data = data['Intimate partner violence prevalence among ever partnered women (%)'][2010];
+        formatData = filterByAgeGroup(data, '15-69  (total) years')
+        formatData.map(row => {
+          row.value = parseFloat(row.value)
+        })
+        //averages data from all years based upon region, {region1: data1, ...}
+        //format data to be read by react bootstrap tables
+      }
+      return (
+        <div className="chart partner-violence">
+          <p>{this.state.quote}</p>
+          <h6 className="title">
+            Intimate partner violence prevalence among ever partnered women (%) - 15-69  (total) years averaged
+        </h6>
+          <ResponsiveContainer width='100%' height={300}>
+            <RadarChart
+              cx="50%" cy="50%" outerRadius="80%"
+              data={formatData}
+            >
+              <PolarGrid />
+              <PolarAngleAxis dataKey="region" />
+              <PolarRadiusAxis />
+              <Tooltip />
+              <Radar
+                name="Percent"
+                dataKey="value"
+                stroke="#8884d8"
+                fill="#8884d8"
+                fillOpacity={0.6}
+              />
+            </RadarChart>
+          </ResponsiveContainer>
+        </div>
+      );
+    }
+  }
+
+  export default IntimatePartnerViolence;

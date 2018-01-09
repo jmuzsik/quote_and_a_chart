@@ -20,19 +20,24 @@ class AdultMortalityProbability extends Component {
       data: [],
       quote: ""
     };
-    this.success = this.success.bind(this)
   }
 
   //use success function so as to immidiately access the final data for set state
   componentDidMount() {
-    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
-  }
-
-  success(wikiData) {
-    //grab wikiquote data
-    let quote = `"${wikiData.quote}"`, data = []
+    let quote = "", data = []
+    const success = (wikiData) => {
+      quote = `"${wikiData.quote}"`
+    }
+    WikiquoteApi.getRandomQuote("Mortality", success, error)
     data = mapTable(filterTable(initialReformat(AdultMortalityProbabilityData)))
-    this.setState({ quote, data })
+    const checkQuoteLength = () => {
+      if (quote.length > 0) {
+        this.setState({ quote, data })
+      } else {
+        setTimeout(checkQuoteLength, 100)
+      }
+    }
+    checkQuoteLength()
   }
 
   render() {

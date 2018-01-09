@@ -20,17 +20,23 @@ class OpenDefChart extends Component {
       data: [],
       quote: ""
     };
-    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
-  }
-
-  success(wikiData) {
-    let quote = `"${wikiData.quote}"`, data = []
+    let quote = "", data = []
+    const success = (wikiData) => {
+      quote = `"${wikiData.quote}"`
+    }
+    WikiquoteApi.getRandomQuote("Suffering", success, error)
     data = mapTable(filterTable(initialReformat(OpenDefData)))
-    this.setState({ quote, data })
+    const checkQuoteLength = () => {
+      if (quote.length > 0) {
+        this.setState({ quote, data })
+      } else {
+        setTimeout(checkQuoteLength, 100)
+      }
+    }
+    checkQuoteLength()
   }
 
   render() {

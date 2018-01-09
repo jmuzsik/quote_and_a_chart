@@ -1,6 +1,6 @@
 /*Do not allow the div to take up more or less then the entirety of the viewport*/
 
-#root>div {
+#root > div {
   text-align: center;
   width: 100vw;
   overflow: hidden;

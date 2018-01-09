@@ -12,67 +12,73 @@ class AlcoholDeaths extends Component {
       data: [],
       quote: ""
     };
-    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
-  }
-
-  success (wikiData) {
-    let quote = `"${wikiData.quote}"`, data = []
-    data = mapTable(filterTable(initialReformat(AlcoholConumptionDeaths)))
-    this.setState({quote, data})
-  }
-
-  render() {
-    let data = [],
-      finalData = []
-    if (this.state.data.length > 0) {
-      data = filterAll(dataFunction(this.state.data, 'alcohol'));
-      data = filterBySex('Both sexes', data, 'Alcohol-attributable fractions, all-cause deaths (%)', '2012')
-      finalData = turnStringsIntoFloats(data, 'value')
-      var selectRowProp = {
-        bgColor: 'rgb(238, 193, 213)'
-      };
+    let quote = "", data = []
+    const success = (wikiData) => {
+      quote = `"${wikiData.quote}"`
     }
-    return (
-      <div className="chart alcohol">
-      <p>{this.state.quote}</p>
-        <BootstrapTable
-          selectRow={selectRowProp}
-          striped
-          condensed
-          search
-          multiColumnSearch
-          pagination
-          height="30vh"
-          data={finalData}
-        >
-          <TableHeaderColumn row="0" colSpan="2" dataAlign="center">
-            Alcohol-attributable fractions, all-cause deaths (%) Both Sexes 2012
-          </TableHeaderColumn>
-          <TableHeaderColumn
-            row="1"
-            dataField="country"
-            isKey={true}
-            width='30%'
-          >
-            Country
-          </TableHeaderColumn>
-          <TableHeaderColumn
-            row="1"
-            dataAlign="center"
-            dataField="value"
-            dataSort={true}
-            width='20%'
-          >
-            Value
-          </TableHeaderColumn>
-        </BootstrapTable>
-      </div>
-    )
+    WikiquoteApi.getRandomQuote("Drunkenness", success, error)
+    data = mapTable(filterTable(initialReformat(AlcoholConumptionDeaths)))
+    const checkQuoteLength = () => {
+      if (quote.length > 0) {
+        this.setState({ quote, data })
+      } else {
+        setTimeout(checkQuoteLength, 100)
+      }
+    }
+    checkQuoteLength()
   }
-}
 
-export default AlcoholDeaths;
+    render() {
+      let data = [],
+        finalData = []
+      if (this.state.data.length > 0) {
+        data = filterAll(dataFunction(this.state.data, 'alcohol'));
+        data = filterBySex('Both sexes', data, 'Alcohol-attributable fractions, all-cause deaths (%)', '2012')
+        finalData = turnStringsIntoFloats(data, 'value')
+        var selectRowProp = {
+          bgColor: 'rgb(238, 193, 213)'
+        };
+      }
+      return (
+        <div className="chart alcohol">
+          <p>{this.state.quote}</p>
+          <BootstrapTable
+            selectRow={selectRowProp}
+            striped
+            condensed
+            search
+            multiColumnSearch
+            pagination
+            height="30vh"
+            data={finalData}
+          >
+            <TableHeaderColumn row="0" colSpan="2" dataAlign="center">
+              Alcohol-attributable fractions, all-cause deaths (%) Both Sexes 2012
+          </TableHeaderColumn>
+            <TableHeaderColumn
+              row="1"
+              dataField="country"
+              isKey={true}
+              width='30%'
+            >
+              Country
+          </TableHeaderColumn>
+            <TableHeaderColumn
+              row="1"
+              dataAlign="center"
+              dataField="value"
+              dataSort={true}
+              width='20%'
+            >
+              Value
+          </TableHeaderColumn>
+          </BootstrapTable>
+        </div>
+      )
+    }
+  }
+
+  export default AlcoholDeaths;

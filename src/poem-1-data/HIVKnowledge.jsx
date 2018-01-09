@@ -12,17 +12,23 @@ class HIVKnowledge extends Component {
       data: [],
       quote: ""
     };
-    this.success = this.success.bind(this)
   }
 
   componentDidMount() {
-    WikiquoteApi.getRandomQuote(this.props.title, this.success, error)
-  }
-
-  success(wikiData) {
-    let quote = `"${wikiData.quote}"`, data = []
+    let quote = "", data = []
+    const success = (wikiData) => {
+      quote = `"${wikiData.quote}"`
+    }
+    const checkQuoteLength = () => {
+      if (quote.length > 0) {
+        this.setState({ quote, data })
+      } else {
+        setTimeout(checkQuoteLength, 100)
+      }
+    }
+    WikiquoteApi.getRandomQuote("HIV/AIDS", success, error)
     data = mapTable(filterTable(initialReformat(HIVKnowledgeData)))
-    this.setState({ quote, data })
+    checkQuoteLength()
   }
 
   render() {
@@ -126,4 +132,4 @@ class HIVKnowledge extends Component {
   }
 }
 
-export default HIVKnowledge;
+export default HIVKnowledge
