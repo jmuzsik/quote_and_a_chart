@@ -59,8 +59,9 @@ class MortalityBeforeFiveChart extends Component {
       //averages data from all years based upon region, {region1: data1, ...}
       dataFilter = averageDataByYear(
         separateDataByYears(
-          data,
-          'Under-five mortality rate (probability of dying by age 5 per 1000 live births)'
+          data[
+            'Under-five mortality rate (probability of dying by age 5 per 1000 live births)'
+          ]
         )
       )
       //format data to be read by recharts

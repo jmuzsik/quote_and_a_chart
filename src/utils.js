@@ -21,7 +21,7 @@ export const filterTable = data => {
   })
 }
 
-//then when the numbers are odd with brackets, etc. It is turned into a float or an int that can easily be worked with.
+//then when the numbers are odd with brackets, etc. It is turned into a float that can easily be worked with.
 export const mapTable = data => {
   return data.map(row => {
     let value = row.Value
@@ -129,8 +129,7 @@ export const filterAll = data => {
   return secondFilter
 }
 
-export const separateDataByYears = (data, title) => {
-  data = data[title]
+export const separateDataByYears = data => {
   let separatedData = [],
     i = 0
   //key is each year... 1990, 1991...

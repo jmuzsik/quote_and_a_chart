@@ -4,11 +4,14 @@
   "private": true,
   "homepage": "https://jmuzsik.github.io/quote_and_a_chart/",
   "dependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "jquery": "^3.2.1",
     "react": "^16.2.0",
     "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.2.0",
     "recharts": "^1.0.0-beta.7"
   },
   "scripts": {
